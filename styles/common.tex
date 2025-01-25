@@ -3,7 +3,6 @@
 %  Common Styles and Formattings
 % -------------------------------------------------------
 
-
 \usepackage{amssymb,amsmath}
 \usepackage[colorlinks,linkcolor=blue,citecolor=blue]{hyperref}
 \usepackage[usenames,dvipsnames]{pstricks}
@@ -41,40 +40,40 @@
 % -------------------- Default Font --------------------
 
 \settextfont[
-Scale=1.09,
-Extension=.ttf, 
-Path=styles/fonts/,
-BoldFont=XB NiloofarBd,
-ItalicFont=XB NiloofarIt,
-BoldItalicFont=XB NiloofarBdIt
+	Scale=1.09,
+	Extension=.ttf,
+	Path=styles/fonts/,
+	BoldFont=XB NiloofarBd,
+	ItalicFont=XB NiloofarIt,
+	BoldItalicFont=XB NiloofarBdIt
 ]{XB Niloofar}
 
 \setdigitfont[
-Scale=1.09,
-Extension=.ttf, 
-Path=styles/fonts/,
-BoldFont=XB NiloofarBd,
-ItalicFont=XB NiloofarIt,
-BoldItalicFont=XB NiloofarBdIt
+	Scale=1.09,
+	Extension=.ttf,
+	Path=styles/fonts/,
+	BoldFont=XB NiloofarBd,
+	ItalicFont=XB NiloofarIt,
+	BoldItalicFont=XB NiloofarBdIt
 ]{XB Niloofar}
 
 
 % -------------------- Sharif Font --------------------
 
 \newcommand{\shariffont}{
-\settextfont[
-Scale=1.4,
-Extension=.ttf, 
-Path=styles/fonts/,
-BoldFont=Sharif1.3-SemiBold,
-]{Sharif1.3-Regular}
+	\settextfont[
+		Scale=1.4,
+		Extension=.ttf,
+		Path=styles/fonts/,
+		BoldFont=Sharif1.3-SemiBold,
+	]{Sharif1.3-Regular}
 
-\setdigitfont[
-Scale=1.4,
-Extension=.ttf, 
-Path=styles/fonts/,
-BoldFont=Sharif1.3-SemiBold,
-]{Sharif1.3-Regular}
+	\setdigitfont[
+		Scale=1.4,
+		Extension=.ttf,
+		Path=styles/fonts/,
+		BoldFont=Sharif1.3-SemiBold,
+	]{Sharif1.3-Regular}
 }
 
 % -------------------- Styles --------------------
@@ -99,13 +98,13 @@ BoldFont=Sharif1.3-SemiBold,
 
 
 \newenvironment{اثبات}
-	{\begin{trivlist}\item[\hskip\labelsep{\em اثبات.}]}
-	{\leavevmode\unskip\nobreak\quad\hspace*{\fill}{\ensuremath{{\square}}}\end{trivlist}}
+{\begin{trivlist}\item[\hskip\labelsep{\em اثبات.}]}
+		{\leavevmode\unskip\nobreak\quad\hspace*{\fill}{\ensuremath{{\square}}}\end{trivlist}}
 
 \newenvironment{alg}[2]
-	{\begin{latin}\settextfont[Scale=1.0]{Times New Roman}
-	\begin{algorithm}[t]\caption{#1}\label{algo:#2}\vspace{0.2em}\begin{algorithmic}[1]}
-	{\end{algorithmic}\vspace{0.2em}\end{algorithm}\end{latin}}
+{\begin{latin}\settextfont[Scale=1.0]{Times New Roman}
+		\begin{algorithm}[t]\caption{#1}\label{algo:#2}\vspace{0.2em}\begin{algorithmic}[1]}
+				{\end{algorithmic}\vspace{0.2em}\end{algorithm}\end{latin}}
 
 
 % -------------------- Titles --------------------
@@ -113,17 +112,17 @@ BoldFont=Sharif1.3-SemiBold,
 
 \renewcommand{\listfigurename}{فهرست شکل‌ها}
 \renewcommand{\listtablename}{فهرست جدول‌ها}
-\renewcommand{\bibname}{\rl{{مراجع}\hfill}} 
+\renewcommand{\bibname}{\rl{{مراجع}\hfill}}
 
 
 % -------------------- Commands --------------------
 
 
-\newcommand{\IN}{\ensuremath{\mathbb{N}}} 
-\newcommand{\IZ}{\ensuremath{\mathbb{Z}}} 
-\newcommand{\IQ}{\ensuremath{\mathbb{Q}}} 
-\newcommand{\IR}{\ensuremath{\mathbb{R}}} 
-\newcommand{\IC}{\ensuremath{\mathbb{C}}} 
+\newcommand{\IN}{\ensuremath{\mathbb{N}}}
+\newcommand{\IZ}{\ensuremath{\mathbb{Z}}}
+\newcommand{\IQ}{\ensuremath{\mathbb{Q}}}
+\newcommand{\IR}{\ensuremath{\mathbb{R}}}
+\newcommand{\IC}{\ensuremath{\mathbb{C}}}
 
 \newcommand{\set}[1]{\left\{ #1 \right\}}
 \newcommand{\seq}[1]{\left< #1 \right>}
@@ -163,11 +162,11 @@ BoldFont=Sharif1.3-SemiBold,
 
 
 \newcommand{\dicalphabet}[1]{
-\begin{minipage}{\columnwidth}
-	\centerline{\noindent\textbf{\large #1 }}
-	\vspace{.5em}
-\end{minipage}
-\nopagebreak[4]
+	\begin{minipage}{\columnwidth}
+		\centerline{\noindent\textbf{\large #1 }}
+		\vspace{.5em}
+	\end{minipage}
+	\nopagebreak[4]
 }
 
 \newcommand{\dic}[2]{\noindent  #2 \dotfill  \lr{#1} \\ }
@@ -180,20 +179,20 @@ BoldFont=Sharif1.3-SemiBold,
 \renewcommand{\psscalebox}[1]{}  % for LaTeX Draw
 
 \newcommand{\floatbox}[2]
-	{\begin{wrapfigure}{l}{#1}
-	\centering #2 \end{wrapfigure}}
+{\begin{wrapfigure}{l}{#1}
+		\centering #2 \end{wrapfigure}}
 
 \newcommand{\centerfig}[2]
-	{\centering\scalebox{#2}{\input{figs/#1}}}
+{\centering\scalebox{#2}{\input{figs/#1}}}
 
 \newcommand{\fig}[3]
-	{\floatbox{#3}{\centerfig{#1}{#2}}}
+{\floatbox{#3}{\centerfig{#1}{#2}}}
 
 \newcommand{\centerimg}[2]
-	{\vspace{1em}\begin{center}\includegraphics[width=#2]{figs/#1}\end{center}\vspace{-1.5em}}
+{\vspace{1em}\begin{center}\includegraphics[width=#2]{figs/#1}\end{center}\vspace{-1.5em}}
 
 \NewDocumentCommand{\img}{m m o}
-	{\begin{wrapfigure}{l}{\IfValueTF{#3}{#3}{#2}}
-	\centering\includegraphics[width=#2]{figs/#1}\end{wrapfigure}}
+{\begin{wrapfigure}{l}{\IfValueTF{#3}{#3}{#2}}
+		\centering\includegraphics[width=#2]{figs/#1}\end{wrapfigure}}
 
 
