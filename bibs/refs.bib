@@ -32,6 +32,24 @@
   file = {/home/navid/Zotero/storage/Q4NAMQ7J/Barnes et al. - 2009 - PatchMatch a randomized correspondence algorithm for structural image editing.pdf}
 }
 
+@misc{beckXLSTMExtendedLong2024,
+  title = {{{xLSTM}}: {{Extended Long Short-Term Memory}}},
+  shorttitle = {{{xLSTM}}},
+  author = {Beck, Maximilian and P{\"o}ppel, Korbinian and Spanring, Markus and Auer, Andreas and Prudnikova, Oleksandra and Kopp, Michael and Klambauer, G{\"u}nter and Brandstetter, Johannes and Hochreiter, Sepp},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2405.04517},
+  eprint = {2405.04517},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2405.04517},
+  urldate = {2025-01-25},
+  abstract = {In the 1990s, the constant error carousel and gating were introduced as the central ideas of the Long Short-Term Memory (LSTM). Since then, LSTMs have stood the test of time and contributed to numerous deep learning success stories, in particular they constituted the first Large Language Models (LLMs). However, the advent of the Transformer technology with parallelizable self-attention at its core marked the dawn of a new era, outpacing LSTMs at scale. We now raise a simple question: How far do we get in language modeling when scaling LSTMs to billions of parameters, leveraging the latest techniques from modern LLMs, but mitigating known limitations of LSTMs? Firstly, we introduce exponential gating with appropriate normalization and stabilization techniques. Secondly, we modify the LSTM memory structure, obtaining: (i) sLSTM with a scalar memory, a scalar update, and new memory mixing, (ii) mLSTM that is fully parallelizable with a matrix memory and a covariance update rule. Integrating these LSTM extensions into residual block backbones yields xLSTM blocks that are then residually stacked into xLSTM architectures. Exponential gating and modified memory structures boost xLSTM capabilities to perform favorably when compared to state-of-the-art Transformers and State Space Models, both in performance and scaling.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/home/navid/Zotero/storage/AGKZQAEN/Beck et al. - 2024 - xLSTM Extended Long Short-Term Memory.pdf;/home/navid/Zotero/storage/9UMTVTPI/2405.html}
+}
+
 @inproceedings{bertalmioImageInpainting2000,
   title = {Image Inpainting},
   booktitle = {Proceedings of the {{ACM SIGGRAPH Conference}} on {{Computer Graphics}}},
@@ -41,6 +59,23 @@
   pages = {417--424},
   abstract = {Inpainting, the technique of modifying an image in an undetectable form, is as ancient as art itself. The goals and applications of inpainting are numerous, from the restoration of damaged paintings and photographs to the removal/replacement of selected objects. In this paper, we introduce a novel algorithm for digital inpainting of still images that attempts to replicate the basic techniques used by professional restorators. After the user selects the regions to be restored, the algorithm automatically fills-in these regions with information surrounding them. The fill-in is done in such a way that isophote lines arriving at the regions' boundaries are completed inside. In contrast with previous approaches, the technique here introduced does not require the user to specify where the novel information comes from. This is automatically done (and in a fast way), thereby allowing to simultaneously fill-in numerous regions containing completely different structures and surrounding backgrounds. In addition, no limitations are imposed on the topology of the region to be inpainted. Applications of this technique include the restoration of old photographs and damaged film; removal of superimposed text like dates, subtitles, or publicity; and the removal of entire objects from the image like microphones or wires in special effects.},
   file = {/home/navid/Zotero/storage/I9GYEEYD/Bertalmío et al. - 2000 - Image inpainting.pdf}
+}
+
+@misc{brownLanguageModelsAre2020,
+  title = {Language {{Models}} Are {{Few-Shot Learners}}},
+  author = {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and {Herbert-Voss}, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel M. and Wu, Jeffrey and Winter, Clemens and Hesse, Christopher and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+  year = {2020},
+  month = jul,
+  number = {arXiv:2005.14165},
+  eprint = {2005.14165},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2005.14165},
+  urldate = {2025-01-25},
+  abstract = {Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language},
+  file = {/home/navid/Zotero/storage/CS77IZUP/Brown et al. - 2020 - Language Models are Few-Shot Learners.pdf;/home/navid/Zotero/storage/TRT9VJ42/2005.html}
 }
 
 @misc{caoLearningSketchTensor2021,
@@ -109,6 +144,23 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Computer Science - Machine Learning},
   file = {/home/navid/Zotero/storage/K97J2X6U/Chen et al. - 2018 - Learning to See in the Dark.pdf;/home/navid/Zotero/storage/ZN9D244J/1805.html}
+}
+
+@misc{cimpoiDescribingTexturesWild2013,
+  title = {Describing {{Textures}} in the {{Wild}}},
+  author = {Cimpoi, Mircea and Maji, Subhransu and Kokkinos, Iasonas and Mohamed, Sammy and Vedaldi, Andrea},
+  year = {2013},
+  month = nov,
+  number = {arXiv:1311.3618},
+  eprint = {1311.3618},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1311.3618},
+  urldate = {2025-01-25},
+  abstract = {Patterns and textures are defining characteristics of many natural objects: a shirt can be striped, the wings of a butterfly can be veined, and the skin of an animal can be scaly. Aiming at supporting this analytical dimension in image understanding, we address the challenging problem of describing textures with semantic attributes. We identify a rich vocabulary of forty-seven texture terms and use them to describe a large dataset of patterns collected in the wild.The resulting Describable Textures Dataset (DTD) is the basis to seek for the best texture representation for recognizing describable texture attributes in images. We port from object recognition to texture recognition the Improved Fisher Vector (IFV) and show that, surprisingly, it outperforms specialized texture descriptors not only on our problem, but also in established material recognition datasets. We also show that the describable attributes are excellent texture descriptors, transferring between datasets and tasks; in particular, combined with IFV, they significantly outperform the state-of-the-art by more than 8 percent on both FMD and KTHTIPS-2b benchmarks. We also demonstrate that they produce intuitive descriptions of materials and Internet images.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/3826RH8U/Cimpoi et al. - 2013 - Describing Textures in the Wild.pdf;/home/navid/Zotero/storage/SQ57KNW4/1311.html}
 }
 
 @misc{deepseek-aiDeepSeekV3TechnicalReport2024,
@@ -271,6 +323,22 @@
   file = {/home/navid/Zotero/storage/WRXRJY95/He - 2024 - Mixture of A Million Experts.pdf;/home/navid/Zotero/storage/SNBLNLRJ/2407.html}
 }
 
+@article{hochreiterLongShortTermMemory1997,
+  title = {Long {{Short-Term Memory}}},
+  author = {Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  year = {1997},
+  month = nov,
+  journal = {Neural Comput.},
+  volume = {9},
+  number = {8},
+  pages = {1735--1780},
+  issn = {0899-7667},
+  doi = {10.1162/neco.1997.9.8.1735},
+  urldate = {2025-01-25},
+  abstract = {Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.},
+  file = {/home/navid/Zotero/storage/6FPYJDWY/Hochreiter and Schmidhuber - 1997 - Long Short-Term Memory.pdf}
+}
+
 @misc{hosenMaskedFaceInpainting2022,
   title = {Masked {{Face Inpainting Through Residual Attention UNet}}},
   author = {Hosen, Md Imran and Islam, Md Baharul},
@@ -286,6 +354,24 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Electrical Engineering and Systems Science - Image and Video Processing},
   file = {/home/navid/Zotero/storage/7GR9FIC8/Hosen and Islam - 2022 - Masked Face Inpainting Through Residual Attention UNet.pdf;/home/navid/Zotero/storage/RHZ56D74/2209.html}
+}
+
+@misc{huangIntroVAEIntrospectiveVariational2018,
+  title = {{{IntroVAE}}: {{Introspective Variational Autoencoders}} for {{Photographic Image Synthesis}}},
+  shorttitle = {{{IntroVAE}}},
+  author = {Huang, Huaibo and Li, Zhihang and He, Ran and Sun, Zhenan and Tan, Tieniu},
+  year = {2018},
+  month = oct,
+  number = {arXiv:1807.06358},
+  eprint = {1807.06358},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1807.06358},
+  urldate = {2025-01-25},
+  abstract = {We present a novel introspective variational autoencoder (IntroVAE) model for synthesizing high-resolution photographic images. IntroVAE is capable of self-evaluating the quality of its generated samples and improving itself accordingly. Its inference and generator models are jointly trained in an introspective way. On one hand, the generator is required to reconstruct the input images from the noisy outputs of the inference model as normal VAEs. On the other hand, the inference model is encouraged to classify between the generated and real samples while the generator tries to fool it as GANs. These two famous generative frameworks are integrated in a simple yet efficient single-stream architecture that can be trained in a single stage. IntroVAE preserves the advantages of VAEs, such as stable training and nice latent manifold. Unlike most other hybrid models of VAEs and GANs, IntroVAE requires no extra discriminators, because the inference model itself serves as a discriminator to distinguish between the generated and real samples. Experiments demonstrate that our method produces high-resolution photo-realistic images (e.g., CELEBA images at {\textbackslash}(1024{\textasciicircum}\{2\}{\textbackslash})), which are comparable to or better than the state-of-the-art GANs.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/home/navid/Zotero/storage/JFJST522/Huang et al. - 2018 - IntroVAE Introspective Variational Autoencoders for Photographic Image Synthesis.pdf;/home/navid/Zotero/storage/2QD6C6U7/1807.html}
 }
 
 @article{jamComprehensiveReviewPresent2021,
@@ -510,6 +596,24 @@
   file = {/home/navid/Zotero/storage/7Q3LY5BF/Liu et al. - 2018 - Image Inpainting for Irregular Holes Using Partial Convolutions.pdf;/home/navid/Zotero/storage/ZBEG9HXP/1804.html}
 }
 
+@misc{liuSwinTransformerHierarchical2021,
+  title = {Swin {{Transformer}}: {{Hierarchical Vision Transformer}} Using {{Shifted Windows}}},
+  shorttitle = {Swin {{Transformer}}},
+  author = {Liu, Ze and Lin, Yutong and Cao, Yue and Hu, Han and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Guo, Baining},
+  year = {2021},
+  month = aug,
+  number = {arXiv:2103.14030},
+  eprint = {2103.14030},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2103.14030},
+  urldate = {2025-01-25},
+  abstract = {This paper presents a new vision Transformer, called Swin Transformer, that capably serves as a general-purpose backbone for computer vision. Challenges in adapting Transformer from language to vision arise from differences between the two domains, such as large variations in the scale of visual entities and the high resolution of pixels in images compared to words in text. To address these differences, we propose a hierarchical Transformer whose representation is computed with {\textbackslash}textbf\{S\}hifted {\textbackslash}textbf\{win\}dows. The shifted windowing scheme brings greater efficiency by limiting self-attention computation to non-overlapping local windows while also allowing for cross-window connection. This hierarchical architecture has the flexibility to model at various scales and has linear computational complexity with respect to image size. These qualities of Swin Transformer make it compatible with a broad range of vision tasks, including image classification (87.3 top-1 accuracy on ImageNet-1K) and dense prediction tasks such as object detection (58.7 box AP and 51.1 mask AP on COCO test-dev) and semantic segmentation (53.5 mIoU on ADE20K val). Its performance surpasses the previous state-of-the-art by a large margin of +2.7 box AP and +2.6 mask AP on COCO, and +3.2 mIoU on ADE20K, demonstrating the potential of Transformer-based models as vision backbones. The hierarchical design and the shifted window approach also prove beneficial for all-MLP architectures. The code and models are publicly available at{\textasciitilde}{\textbackslash}url\{https://github.com/microsoft/Swin-Transformer\}.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  file = {/home/navid/Zotero/storage/2E6IWHZ9/Liu et al. - 2021 - Swin Transformer Hierarchical Vision Transformer using Shifted Windows.pdf;/home/navid/Zotero/storage/R4LRNXP3/2103.html}
+}
+
 @misc{nazeriEdgeConnectGenerativeImage2019,
   title = {{{EdgeConnect}}: {{Generative Image Inpainting}} with {{Adversarial Edge Learning}}},
   shorttitle = {{{EdgeConnect}}},
@@ -609,6 +713,17 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
   file = {/home/navid/Zotero/storage/DEEWHJYR/Quan et al. - 2024 - Deep Learning-based Image and Video Inpainting A Survey.pdf;/home/navid/Zotero/storage/M3JTSRIQ/2401.html}
+}
+
+@article{radfordLanguageModelsAre2019,
+  title = {Language Models Are Unsupervised Multitask Learners},
+  author = {Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya and others},
+  year = {2019},
+  journal = {OpenAI blog},
+  volume = {1},
+  number = {8},
+  pages = {9},
+  file = {/home/navid/Zotero/storage/BFNIGMVV/Radford et al. - 2019 - Language models are unsupervised multitask learners.pdf}
 }
 
 @misc{radfordLearningTransferableVisual2021,
@@ -763,6 +878,23 @@
   file = {/home/navid/Zotero/storage/UIPNWLJ4/Wan et al. - 2020 - Bringing Old Photos Back to Life.pdf;/home/navid/Zotero/storage/PHAQXDRR/2004.html}
 }
 
+@misc{wanHighFidelityPluralisticImage2021,
+  title = {High-{{Fidelity Pluralistic Image Completion}} with {{Transformers}}},
+  author = {Wan, Ziyu and Zhang, Jingbo and Chen, Dongdong and Liao, Jing},
+  year = {2021},
+  month = mar,
+  number = {arXiv:2103.14031},
+  eprint = {2103.14031},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2103.14031},
+  urldate = {2025-01-25},
+  abstract = {Image completion has made tremendous progress with convolutional neural networks (CNNs), because of their powerful texture modeling capacity. However, due to some inherent properties (e.g., local inductive prior, spatial-invariant kernels), CNNs do not perform well in understanding global structures or naturally support pluralistic completion. Recently, transformers demonstrate their power in modeling the long-term relationship and generating diverse results, but their computation complexity is quadratic to input length, thus hampering the application in processing high-resolution images. This paper brings the best of both worlds to pluralistic image completion: appearance prior reconstruction with transformer and texture replenishment with CNN. The former transformer recovers pluralistic coherent structures together with some coarse textures, while the latter CNN enhances the local texture details of coarse priors guided by the high-resolution masked images. The proposed method vastly outperforms state-of-the-art methods in terms of three aspects: 1) large performance boost on image fidelity even compared to deterministic completion methods; 2) better diversity and higher fidelity for pluralistic completion; 3) exceptional generalization ability on large masks and generic dataset, like ImageNet.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics},
+  file = {/home/navid/Zotero/storage/UEVFXMRZ/Wan et al. - 2021 - High-Fidelity Pluralistic Image Completion with Transformers.pdf;/home/navid/Zotero/storage/ZBVVVDV6/2103.html}
+}
+
 @misc{wanOldPhotoRestoration2020,
   title = {Old {{Photo Restoration}} via {{Deep Latent Space Translation}}},
   author = {Wan, Ziyu and Zhang, Bo and Chen, Dongdong and Zhang, Pan and Chen, Dong and Liao, Jing and Wen, Fang},
@@ -814,6 +946,40 @@
   file = {/home/navid/Zotero/storage/35S6EX3H/Wu et al. - 2020 - Deep Generative Model for Image Inpainting with Local Binary Pattern Learning and Spatial Attention.pdf;/home/navid/Zotero/storage/EY6WYIL8/2009.html}
 }
 
+@article{yaghmaeeImprovingImageInpainting2020,
+  title = {Improving Image Inpainting Quality by a New {{SVD-based}} Decomposition},
+  author = {Yaghmaee, Farzin and Peyvandi, Kimia},
+  year = {2020},
+  month = may,
+  journal = {Multimedia Tools and Applications},
+  volume = {79},
+  number = {19},
+  pages = {13795--13809},
+  issn = {1573-7721},
+  doi = {10.1007/s11042-020-08650-x},
+  urldate = {2025-01-25},
+  abstract = {In this paper, we present a new algorithm for image inpainting using structure and texture information. Our image decomposition to texture and structure is accomplished by the SVD method in the primary step, and then an algorithm for texture inpainting is applied. At the next level, edge detection is used in target region related to inpainted texture component. The detected edges demonstrate border of different textures in the target region, and the boundary pixels are ignored from mask temporarily. The other target pixels should be primarily inpainted, and then border pixels would be filled subsequently. Experimental results of this algorithm show better consistency in comparison with state of the art methods.},
+  langid = {english},
+  keywords = {Image decomposition,Image inpainting,Structure,SVD,Texture}
+}
+
+@misc{yuDiverseImageInpainting2021,
+  title = {Diverse {{Image Inpainting}} with {{Bidirectional}} and {{Autoregressive Transformers}}},
+  author = {Yu, Yingchen and Zhan, Fangneng and Wu, Rongliang and Pan, Jianxiong and Cui, Kaiwen and Lu, Shijian and Ma, Feiying and Xie, Xuansong and Miao, Chunyan},
+  year = {2021},
+  month = jun,
+  number = {arXiv:2104.12335},
+  eprint = {2104.12335},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2104.12335},
+  urldate = {2025-01-25},
+  abstract = {Image inpainting is an underdetermined inverse problem, which naturally allows diverse contents to fill up the missing or corrupted regions realistically. Prevalent approaches using convolutional neural networks (CNNs) can synthesize visually pleasant contents, but CNNs suffer from limited perception fields for capturing global features. With image-level attention, transformers enable to model long-range dependencies and generate diverse contents with autoregressive modeling of pixel-sequence distributions. However, the unidirectional attention in autoregressive transformers is suboptimal as corrupted image regions may have arbitrary shapes with contexts from any direction. We propose BAT-Fill, an innovative image inpainting framework that introduces a novel bidirectional autoregressive transformer (BAT) for image inpainting. BAT utilizes the transformers to learn autoregressive distributions, which naturally allows the diverse generation of missing contents. In addition, it incorporates the masked language model like BERT, which enables bidirectionally modeling of contextual information of missing regions for better image completion. Extensive experiments over multiple datasets show that BAT-Fill achieves superior diversity and fidelity in image inpainting qualitatively and quantitatively.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/LQLDM7N3/Yu et al. - 2021 - Diverse Image Inpainting with Bidirectional and Autoregressive Transformers.pdf;/home/navid/Zotero/storage/FVNZ9NAZ/2104.html}
+}
+
 @misc{yuFreeFormImageInpainting2019,
   title = {Free-{{Form Image Inpainting}} with {{Gated Convolution}}},
   author = {Yu, Jiahui and Lin, Zhe and Yang, Jimei and Shen, Xiaohui and Lu, Xin and Huang, Thomas},
@@ -829,6 +995,23 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Computer Science - Machine Learning},
   file = {/home/navid/Zotero/storage/YVTF94XY/Yu et al. - 2019 - Free-Form Image Inpainting with Gated Convolution.pdf;/home/navid/Zotero/storage/WFQ4KNGI/1806.html}
+}
+
+@misc{zhengBridgingGlobalContext2021,
+  title = {Bridging {{Global Context Interactions}} for {{High-Fidelity Image Completion}}},
+  author = {Zheng, Chuanxia and Cham, Tat-Jen and Cai, Jianfei and Phung, Dinh},
+  year = {2021},
+  month = nov,
+  number = {arXiv:2104.00845},
+  eprint = {2104.00845},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2104.00845},
+  urldate = {2025-01-25},
+  abstract = {Bridging global context interactions correctly is important for high-fidelity image completion with large masks. Previous methods attempting this via deep or large receptive field (RF) convolutions cannot escape from the dominance of nearby interactions, which may be inferior. In this paper, we propose to treat image completion as a directionless sequence-to-sequence prediction task, and deploy a transformer to directly capture long-range dependence in the encoder. Crucially, we employ a restrictive CNN with small and non-overlapping RF for weighted token representation, which allows the transformer to explicitly model the long-range visible context relations with equal importance in all layers, without implicitly confounding neighboring tokens when larger RFs are used. To improve appearance consistency between visible and generated regions, a novel attention-aware layer (AAL) is introduced to better exploit distantly related high-frequency features. Overall, extensive experiments demonstrate superior performance compared to state-of-the-art methods on several datasets.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/UFR96AXN/Zheng et al. - 2021 - Bridging Global Context Interactions for High-Fidelity Image Completion.pdf;/home/navid/Zotero/storage/AV4XI7AS/2104.html}
 }
 
 @misc{zhouPlacesImageDatabase2016,
@@ -847,4 +1030,22 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition},
   file = {/home/navid/Zotero/storage/ZG58PSHF/Zhou et al. - 2016 - Places An Image Database for Deep Scene Understanding.pdf;/home/navid/Zotero/storage/8ZJ8QSCT/1610.html}
+}
+
+@misc{zhuCelebVHQLargeScaleVideo2022,
+  title = {{{CelebV-HQ}}: {{A Large-Scale Video Facial Attributes Dataset}}},
+  shorttitle = {{{CelebV-HQ}}},
+  author = {Zhu, Hao and Wu, Wayne and Zhu, Wentao and Jiang, Liming and Tang, Siwei and Zhang, Li and Liu, Ziwei and Loy, Chen Change},
+  year = {2022},
+  month = jul,
+  number = {arXiv:2207.12393},
+  eprint = {2207.12393},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2207.12393},
+  urldate = {2025-01-25},
+  abstract = {Large-scale datasets have played indispensable roles in the recent success of face generation/editing and significantly facilitated the advances of emerging research fields. However, the academic community still lacks a video dataset with diverse facial attribute annotations, which is crucial for the research on face-related videos. In this work, we propose a large-scale, high-quality, and diverse video dataset with rich facial attribute annotations, named the High-Quality Celebrity Video Dataset (CelebV-HQ). CelebV-HQ contains 35,666 video clips with the resolution of 512x512 at least, involving 15,653 identities. All clips are labeled manually with 83 facial attributes, covering appearance, action, and emotion. We conduct a comprehensive analysis in terms of age, ethnicity, brightness stability, motion smoothness, head pose diversity, and data quality to demonstrate the diversity and temporal coherence of CelebV-HQ. Besides, its versatility and potential are validated on two representative tasks, i.e., unconditional video generation and video facial attribute editing. Furthermore, we envision the future potential of CelebV-HQ, as well as the new opportunities and challenges it would bring to related research directions. Data, code, and models are publicly available. Project page: https://celebv-hq.github.io.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/TBNG25M8/Zhu et al. - 2022 - CelebV-HQ A Large-Scale Video Facial Attributes Dataset.pdf;/home/navid/Zotero/storage/JR2NA6KB/2207.html}
 }
