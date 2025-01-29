@@ -15,6 +15,24 @@
   file = {/home/navid/Zotero/storage/VCGMKMB3/Bahdanau et al. - 2016 - Neural Machine Translation by Jointly Learning to Align and Translate.pdf;/home/navid/Zotero/storage/92NCKYAG/1409.html}
 }
 
+@misc{baiDreamDiffusionGeneratingHighQuality2023,
+  title = {{{DreamDiffusion}}: {{Generating High-Quality Images}} from {{Brain EEG Signals}}},
+  shorttitle = {{{DreamDiffusion}}},
+  author = {Bai, Yunpeng and Wang, Xintao and Cao, Yan-pei and Ge, Yixiao and Yuan, Chun and Shan, Ying},
+  year = {2023},
+  month = jun,
+  number = {arXiv:2306.16934},
+  eprint = {2306.16934},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2306.16934},
+  urldate = {2025-01-27},
+  abstract = {This paper introduces DreamDiffusion, a novel method for generating high-quality images directly from brain electroencephalogram (EEG) signals, without the need to translate thoughts into text. DreamDiffusion leverages pre-trained text-to-image models and employs temporal masked signal modeling to pre-train the EEG encoder for effective and robust EEG representations. Additionally, the method further leverages the CLIP image encoder to provide extra supervision to better align EEG, text, and image embeddings with limited EEG-image pairs. Overall, the proposed method overcomes the challenges of using EEG signals for image generation, such as noise, limited information, and individual differences, and achieves promising results. Quantitative and qualitative results demonstrate the effectiveness of the proposed method as a significant step towards portable and low-cost ``thoughts-to-image'', with potential applications in neuroscience and computer vision. The code is available here {\textbackslash}url\{https://github.com/bbaaii/DreamDiffusion\}.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/56L2NCH7/Bai et al. - 2023 - DreamDiffusion Generating High-Quality Images from Brain EEG Signals.pdf;/home/navid/Zotero/storage/BURSCZYC/2306.html}
+}
+
 @article{barnesPatchMatchRandomizedCorrespondence2009,
   title = {{{PatchMatch}}: A Randomized Correspondence Algorithm for Structural Image Editing},
   shorttitle = {{{PatchMatch}}},
@@ -59,6 +77,42 @@
   pages = {417--424},
   abstract = {Inpainting, the technique of modifying an image in an undetectable form, is as ancient as art itself. The goals and applications of inpainting are numerous, from the restoration of damaged paintings and photographs to the removal/replacement of selected objects. In this paper, we introduce a novel algorithm for digital inpainting of still images that attempts to replicate the basic techniques used by professional restorators. After the user selects the regions to be restored, the algorithm automatically fills-in these regions with information surrounding them. The fill-in is done in such a way that isophote lines arriving at the regions' boundaries are completed inside. In contrast with previous approaches, the technique here introduced does not require the user to specify where the novel information comes from. This is automatically done (and in a fast way), thereby allowing to simultaneously fill-in numerous regions containing completely different structures and surrounding backgrounds. In addition, no limitations are imposed on the topology of the region to be inpainted. Applications of this technique include the restoration of old photographs and damaged film; removal of superimposed text like dates, subtitles, or publicity; and the removal of entire objects from the image like microphones or wires in special effects.},
   file = {/home/navid/Zotero/storage/I9GYEEYD/Bertalmío et al. - 2000 - Image inpainting.pdf}
+}
+
+@misc{borsosAudioLMLanguageModeling2023,
+  title = {{{AudioLM}}: A {{Language Modeling Approach}} to {{Audio Generation}}},
+  shorttitle = {{{AudioLM}}},
+  author = {Borsos, Zal{\'a}n and Marinier, Rapha{\"e}l and Vincent, Damien and Kharitonov, Eugene and Pietquin, Olivier and Sharifi, Matt and Roblek, Dominik and Teboul, Olivier and Grangier, David and Tagliasacchi, Marco and Zeghidour, Neil},
+  year = {2023},
+  month = jul,
+  number = {arXiv:2209.03143},
+  eprint = {2209.03143},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2209.03143},
+  urldate = {2025-01-28},
+  abstract = {We introduce AudioLM, a framework for high-quality audio generation with long-term consistency. AudioLM maps the input audio to a sequence of discrete tokens and casts audio generation as a language modeling task in this representation space. We show how existing audio tokenizers provide different trade-offs between reconstruction quality and long-term structure, and we propose a hybrid tokenization scheme to achieve both objectives. Namely, we leverage the discretized activations of a masked language model pre-trained on audio to capture long-term structure and the discrete codes produced by a neural audio codec to achieve high-quality synthesis. By training on large corpora of raw audio waveforms, AudioLM learns to generate natural and coherent continuations given short prompts. When trained on speech, and without any transcript or annotation, AudioLM generates syntactically and semantically plausible speech continuations while also maintaining speaker identity and prosody for unseen speakers. Furthermore, we demonstrate how our approach extends beyond speech by generating coherent piano music continuations, despite being trained without any symbolic representation of music.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing},
+  file = {/home/navid/Zotero/storage/BP9W8E5C/Borsos et al. - 2023 - AudioLM a Language Modeling Approach to Audio Generation.pdf;/home/navid/Zotero/storage/ERNI2DRU/2209.html}
+}
+
+@misc{borsosSoundStormEfficientParallel2023,
+  title = {{{SoundStorm}}: {{Efficient Parallel Audio Generation}}},
+  shorttitle = {{{SoundStorm}}},
+  author = {Borsos, Zal{\'a}n and Sharifi, Matt and Vincent, Damien and Kharitonov, Eugene and Zeghidour, Neil and Tagliasacchi, Marco},
+  year = {2023},
+  month = may,
+  number = {arXiv:2305.09636},
+  eprint = {2305.09636},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2305.09636},
+  urldate = {2025-01-28},
+  abstract = {We present SoundStorm, a model for efficient, non-autoregressive audio generation. SoundStorm receives as input the semantic tokens of AudioLM, and relies on bidirectional attention and confidence-based parallel decoding to generate the tokens of a neural audio codec. Compared to the autoregressive generation approach of AudioLM, our model produces audio of the same quality and with higher consistency in voice and acoustic conditions, while being two orders of magnitude faster. SoundStorm generates 30 seconds of audio in 0.5 seconds on a TPU-v4. We demonstrate the ability of our model to scale audio generation to longer sequences by synthesizing high-quality, natural dialogue segments, given a transcript annotated with speaker turns and a short prompt with the speakers' voices.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing},
+  file = {/home/navid/Zotero/storage/MHFBTEHT/Borsos et al. - 2023 - SoundStorm Efficient Parallel Audio Generation.pdf;/home/navid/Zotero/storage/XT2SC8EU/2305.html}
 }
 
 @misc{brownLanguageModelsAre2020,
@@ -161,6 +215,14 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
   file = {/home/navid/Zotero/storage/3826RH8U/Cimpoi et al. - 2013 - Describing Textures in the Wild.pdf;/home/navid/Zotero/storage/SQ57KNW4/1311.html}
+}
+
+@misc{danbooru2019Portraits,
+  title = {Danbooru2019 Portraits: A Large-Scale Anime Head Illustration Dataset},
+  author = {Branwen, Gwern and {Anonymous} and Community, Danbooru},
+  year = {2019},
+  month = mar,
+  timestamp = {2019-03-12}
 }
 
 @misc{deepseek-aiDeepSeekV3TechnicalReport2024,
@@ -289,6 +351,22 @@
   file = {/home/navid/Zotero/storage/YN546HHX/Guo et al. - 2024 - Image Inpainting via Conditional Texture and Structure Dual Generation.pdf;/home/navid/Zotero/storage/VZBXK9IG/2108.html}
 }
 
+@article{haysSceneCompletionUsing2007,
+  title = {Scene Completion Using Millions of Photographs},
+  author = {Hays, James and Efros, Alexei A.},
+  year = {2007},
+  month = jul,
+  journal = {ACM Trans. Graph.},
+  volume = {26},
+  number = {3},
+  pages = {4--es},
+  issn = {0730-0301},
+  doi = {10.1145/1276377.1276382},
+  urldate = {2025-01-26},
+  abstract = {What can you do with a million images? In this paper we present a new image completion algorithm powered by a huge database of photographs gathered from the Web. The algorithm patches up holes in images by finding similar image regions in the database that are not only seamless but also semantically valid. Our chief insight is that while the space of images is effectively infinite, the space of semantically differentiable scenes is actually not that large. For many image completion tasks we are able to find similar scenes which contain image fragments that will convincingly complete the image. Our algorithm is entirely data-driven, requiring no annotations or labelling by the user. Unlike existing image completion methods, our algorithm can generate a diverse set of results for each input image and we allow users to select among them. We demonstrate the superiority of our algorithm over existing image completion approaches.},
+  file = {/home/navid/Zotero/storage/Q4SQCKMB/Hays and Efros - 2007 - Scene completion using millions of photographs.pdf}
+}
+
 @misc{heDeepResidualLearning2015,
   title = {Deep {{Residual Learning}} for {{Image Recognition}}},
   author = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
@@ -356,6 +434,24 @@
   file = {/home/navid/Zotero/storage/7GR9FIC8/Hosen and Islam - 2022 - Masked Face Inpainting Through Residual Attention UNet.pdf;/home/navid/Zotero/storage/RHZ56D74/2209.html}
 }
 
+@misc{howardMobileNetsEfficientConvolutional2017,
+  title = {{{MobileNets}}: {{Efficient Convolutional Neural Networks}} for {{Mobile Vision Applications}}},
+  shorttitle = {{{MobileNets}}},
+  author = {Howard, Andrew G. and Zhu, Menglong and Chen, Bo and Kalenichenko, Dmitry and Wang, Weijun and Weyand, Tobias and Andreetto, Marco and Adam, Hartwig},
+  year = {2017},
+  month = apr,
+  number = {arXiv:1704.04861},
+  eprint = {1704.04861},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1704.04861},
+  urldate = {2025-01-26},
+  abstract = {We present a class of efficient models called MobileNets for mobile and embedded vision applications. MobileNets are based on a streamlined architecture that uses depth-wise separable convolutions to build light weight deep neural networks. We introduce two simple global hyper-parameters that efficiently trade off between latency and accuracy. These hyper-parameters allow the model builder to choose the right sized model for their application based on the constraints of the problem. We present extensive experiments on resource and accuracy tradeoffs and show strong performance compared to other popular models on ImageNet classification. We then demonstrate the effectiveness of MobileNets across a wide range of applications and use cases including object detection, finegrain classification, face attributes and large scale geo-localization.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/9M9IP8M4/Howard et al. - 2017 - MobileNets Efficient Convolutional Neural Networks for Mobile Vision Applications.pdf;/home/navid/Zotero/storage/2C6U6Z3Z/1704.html}
+}
+
 @misc{huangIntroVAEIntrospectiveVariational2018,
   title = {{{IntroVAE}}: {{Introspective Variational Autoencoders}} for {{Photographic Image Synthesis}}},
   shorttitle = {{{IntroVAE}}},
@@ -372,6 +468,22 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Computer Science - Machine Learning,Statistics - Machine Learning},
   file = {/home/navid/Zotero/storage/JFJST522/Huang et al. - 2018 - IntroVAE Introspective Variational Autoencoders for Photographic Image Synthesis.pdf;/home/navid/Zotero/storage/2QD6C6U7/1807.html}
+}
+
+@article{iizukaGloballyLocallyConsistent2017,
+  title = {Globally and Locally Consistent Image Completion},
+  author = {Iizuka, Satoshi and {Simo-Serra}, Edgar and Ishikawa, Hiroshi},
+  year = {2017},
+  month = jul,
+  journal = {ACM Trans. Graph.},
+  volume = {36},
+  number = {4},
+  pages = {107:1--107:14},
+  issn = {0730-0301},
+  doi = {10.1145/3072959.3073659},
+  urldate = {2025-01-26},
+  abstract = {We present a novel approach for image completion that results in images that are both locally and globally consistent. With a fully-convolutional neural network, we can complete images of arbitrary resolutions by filling-in missing regions of any shape. To train this image completion network to be consistent, we use global and local context discriminators that are trained to distinguish real images from completed ones. The global discriminator looks at the entire image to assess if it is coherent as a whole, while the local discriminator looks only at a small area centered at the completed region to ensure the local consistency of the generated patches. The image completion network is then trained to fool the both context discriminator networks, which requires it to generate images that are indistinguishable from real ones with regard to overall consistency as well as in details. We show that our approach can be used to complete a wide variety of scenes. Furthermore, in contrast with the patch-based approaches such as PatchMatch, our approach can generate fragments that do not appear elsewhere in the image, which allows us to naturally complete the images of objects with familiar and highly specific structures, such as faces.},
+  file = {/home/navid/Zotero/storage/TPJAHHI5/Iizuka et al. - 2017 - Globally and locally consistent image completion.pdf}
 }
 
 @article{jamComprehensiveReviewPresent2021,
@@ -405,6 +517,23 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning},
   file = {/home/navid/Zotero/storage/Y2FYX75L/Jiang et al. - 2024 - Mixtral of Experts.pdf;/home/navid/Zotero/storage/Q54QYACN/2401.html}
+}
+
+@misc{johnsonPerceptualLossesRealTime2016,
+  title = {Perceptual {{Losses}} for {{Real-Time Style Transfer}} and {{Super-Resolution}}},
+  author = {Johnson, Justin and Alahi, Alexandre and {Fei-Fei}, Li},
+  year = {2016},
+  month = mar,
+  number = {arXiv:1603.08155},
+  eprint = {1603.08155},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1603.08155},
+  urldate = {2025-01-26},
+  abstract = {We consider image transformation problems, where an input image is transformed into an output image. Recent methods for such problems typically train feed-forward convolutional neural networks using a {\textbackslash}emph\{per-pixel\} loss between the output and ground-truth images. Parallel work has shown that high-quality images can be generated by defining and optimizing {\textbackslash}emph\{perceptual\} loss functions based on high-level features extracted from pretrained networks. We combine the benefits of both approaches, and propose the use of perceptual loss functions for training feed-forward networks for image transformation tasks. We show results on image style transfer, where a feed-forward network is trained to solve the optimization problem proposed by Gatys et al in real-time. Compared to the optimization-based method, our network gives similar qualitative results but is three orders of magnitude faster. We also experiment with single-image super-resolution, where replacing a per-pixel loss with a perceptual loss gives visually pleasing results.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  file = {/home/navid/Zotero/storage/DLEKKD89/Johnson et al. - 2016 - Perceptual Losses for Real-Time Style Transfer and Super-Resolution.pdf;/home/navid/Zotero/storage/KJZPV3EF/1603.html}
 }
 
 @misc{joSCFEGANFaceEditing2019,
@@ -510,6 +639,15 @@
   file = {/home/navid/Zotero/storage/SP6ZVCF6/Kim et al. - 2020 - Texture Transform Attention for Realistic Image Inpainting.pdf;/home/navid/Zotero/storage/ERBPSQVW/2012.html}
 }
 
+@article{krizhevsky2012imagenet,
+  title = {Imagenet Classification with Deep Convolutional Neural Networks},
+  author = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+  year = {2012},
+  journal = {Advances in neural information processing systems},
+  volume = {25},
+  file = {/home/navid/Zotero/storage/YE7UV2XU/Krizhevsky et al. - 2012 - Imagenet classification with deep convolutional neural networks.pdf}
+}
+
 @misc{laubeImageInpaintingHighResolution2018,
   title = {Image {{Inpainting}} for {{High-Resolution Textures}} Using {{CNN Texture Synthesis}}},
   author = {Laube, Pascal and Grunwald, Michael and Franz, Matthias O. and Umlauf, Georg},
@@ -612,6 +750,24 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
   file = {/home/navid/Zotero/storage/2E6IWHZ9/Liu et al. - 2021 - Swin Transformer Hierarchical Vision Transformer using Shifted Windows.pdf;/home/navid/Zotero/storage/R4LRNXP3/2103.html}
+}
+
+@misc{lotfollahiDeepPacketNovel2018,
+  title = {Deep {{Packet}}: {{A Novel Approach For Encrypted Traffic Classification Using Deep Learning}}},
+  shorttitle = {Deep {{Packet}}},
+  author = {Lotfollahi, Mohammad and Zade, Ramin Shirali Hossein and Siavoshani, Mahdi Jafari and Saberian, Mohammdsadegh},
+  year = {2018},
+  month = jul,
+  number = {arXiv:1709.02656},
+  eprint = {1709.02656},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1709.02656},
+  urldate = {2025-01-28},
+  abstract = {Internet traffic classification has become more important with rapid growth of current Internet network and online applications. There have been numerous studies on this topic which have led to many different approaches. Most of these approaches use predefined features extracted by an expert in order to classify network traffic. In contrast, in this study, we propose a {\textbackslash}emph\{deep learning\} based approach which integrates both feature extraction and classification phases into one system. Our proposed scheme, called "Deep Packet," can handle both {\textbackslash}emph\{traffic characterization\} in which the network traffic is categorized into major classes ({\textbackslash}eg, FTP and P2P) and application identification in which end-user applications ({\textbackslash}eg, BitTorrent and Skype) identification is desired. Contrary to most of the current methods, Deep Packet can identify encrypted traffic and also distinguishes between VPN and non-VPN network traffic. After an initial pre-processing phase on data, packets are fed into Deep Packet framework that embeds stacked autoencoder and convolution neural network in order to classify network traffic. Deep packet with CNN as its classification model achieved recall of \$0.98\$ in application identification task and \$0.94\$ in traffic categorization task. To the best of our knowledge, Deep Packet outperforms all of the proposed classification methods on UNB ISCX VPN-nonVPN dataset.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Cryptography and Security,Computer Science - Machine Learning,Computer Science - Networking and Internet Architecture},
+  file = {/home/navid/Zotero/storage/ZFRYXWYR/Lotfollahi et al. - 2018 - Deep Packet A Novel Approach For Encrypted Traffic Classification Using Deep Learning.pdf;/home/navid/Zotero/storage/3SFTS563/1709.html}
 }
 
 @misc{nazeriEdgeConnectGenerativeImage2019,
@@ -844,6 +1000,24 @@
   file = {/home/navid/Zotero/storage/3YPVUZFC/Seyfioglu et al. - 2024 - Diffuse to Choose Enriching Image Conditioned Inpainting in Latent Diffusion Models for Virtual Try.pdf;/home/navid/Zotero/storage/JQIT2MYY/2401.html}
 }
 
+@misc{shiConvolutionalLSTMNetwork2015,
+  title = {Convolutional {{LSTM Network}}: {{A Machine Learning Approach}} for {{Precipitation Nowcasting}}},
+  shorttitle = {Convolutional {{LSTM Network}}},
+  author = {Shi, Xingjian and Chen, Zhourong and Wang, Hao and Yeung, Dit-Yan and Wong, Wai-kin and Woo, Wang-chun},
+  year = {2015},
+  month = sep,
+  number = {arXiv:1506.04214},
+  eprint = {1506.04214},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1506.04214},
+  urldate = {2025-01-26},
+  abstract = {The goal of precipitation nowcasting is to predict the future rainfall intensity in a local region over a relatively short period of time. Very few previous studies have examined this crucial and challenging weather forecasting problem from the machine learning perspective. In this paper, we formulate precipitation nowcasting as a spatiotemporal sequence forecasting problem in which both the input and the prediction target are spatiotemporal sequences. By extending the fully connected LSTM (FC-LSTM) to have convolutional structures in both the input-to-state and state-to-state transitions, we propose the convolutional LSTM (ConvLSTM) and use it to build an end-to-end trainable model for the precipitation nowcasting problem. Experiments show that our ConvLSTM network captures spatiotemporal correlations better and consistently outperforms FC-LSTM and the state-of-the-art operational ROVER algorithm for precipitation nowcasting.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/S8K559BK/Shi et al. - 2015 - Convolutional LSTM Network A Machine Learning Approach for Precipitation Nowcasting.pdf;/home/navid/Zotero/storage/JNPKTRX8/1506.html}
+}
+
 @misc{vaswaniAttentionAllYou2023,
   title = {Attention {{Is All You Need}}},
   author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
@@ -963,6 +1137,24 @@
   keywords = {Image decomposition,Image inpainting,Structure,SVD,Texture}
 }
 
+@misc{yangHunyuan3D10Unified2025,
+  title = {{{Hunyuan3D}} 1.0: {{A Unified Framework}} for {{Text-to-3D}} and {{Image-to-3D Generation}}},
+  shorttitle = {{{Hunyuan3D}} 1.0},
+  author = {Yang, Xianghui and Shi, Huiwen and Zhang, Bowen and Yang, Fan and Wang, Jiacheng and Zhao, Hongxu and Liu, Xinhai and Wang, Xinzhou and Lin, Qingxiang and Yu, Jiaao and Wang, Lifu and Xu, Jing and He, Zebin and Chen, Zhuo and Liu, Sicong and Wu, Junta and Lian, Yihang and Yang, Shaoxiong and Liu, Yuhong and Yang, Yong and Wang, Di and Jiang, Jie and Guo, Chunchao},
+  year = {2025},
+  month = jan,
+  number = {arXiv:2411.02293},
+  eprint = {2411.02293},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2411.02293},
+  urldate = {2025-01-28},
+  abstract = {While 3D generative models have greatly improved artists' workflows, the existing diffusion models for 3D generation suffer from slow generation and poor generalization. To address this issue, we propose a two-stage approach named Hunyuan3D 1.0 including a lite version and a standard version, that both support text- and image-conditioned generation. In the first stage, we employ a multi-view diffusion model that efficiently generates multi-view RGB in approximately 4 seconds. These multi-view images capture rich details of the 3D asset from different viewpoints, relaxing the tasks from single-view to multi-view reconstruction. In the second stage, we introduce a feed-forward reconstruction model that rapidly and faithfully reconstructs the 3D asset given the generated multi-view images in approximately 7 seconds. The reconstruction network learns to handle noises and in-consistency introduced by the multi-view diffusion and leverages the available information from the condition image to efficiently recover the 3D structure. Our framework involves the text-to-image model, i.e., Hunyuan-DiT, making it a unified framework to support both text- and image-conditioned 3D generation. Our standard version has 3x more parameters than our lite and other existing model. Our Hunyuan3D 1.0 achieves an impressive balance between speed and quality, significantly reducing generation time while maintaining the quality and diversity of the produced assets.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/KSHPQ7CH/Yang et al. - 2025 - Hunyuan3D 1.0 A Unified Framework for Text-to-3D and Image-to-3D Generation.pdf;/home/navid/Zotero/storage/YDNWKQ4Y/2411.html}
+}
+
 @misc{yuDiverseImageInpainting2021,
   title = {Diverse {{Image Inpainting}} with {{Bidirectional}} and {{Autoregressive Transformers}}},
   author = {Yu, Yingchen and Zhan, Fangneng and Wu, Rongliang and Pan, Jianxiong and Cui, Kaiwen and Lu, Shijian and Ma, Feiying and Xie, Xuansong and Miao, Chunyan},
@@ -995,6 +1187,24 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Computer Science - Machine Learning},
   file = {/home/navid/Zotero/storage/YVTF94XY/Yu et al. - 2019 - Free-Form Image Inpainting with Gated Convolution.pdf;/home/navid/Zotero/storage/WFQ4KNGI/1806.html}
+}
+
+@misc{zhaoHunyuan3D20Scaling2025,
+  title = {{{Hunyuan3D}} 2.0: {{Scaling Diffusion Models}} for {{High Resolution Textured 3D Assets Generation}}},
+  shorttitle = {{{Hunyuan3D}} 2.0},
+  author = {Zhao, Zibo and Lai, Zeqiang and Lin, Qingxiang and Zhao, Yunfei and Liu, Haolin and Yang, Shuhui and Feng, Yifei and Yang, Mingxin and Zhang, Sheng and Yang, Xianghui and Shi, Huiwen and Liu, Sicong and Wu, Junta and Lian, Yihang and Yang, Fan and Tang, Ruining and He, Zebin and Wang, Xinzhou and Liu, Jian and Zuo, Xuhui and Chen, Zhuo and Lei, Biwen and Weng, Haohan and Xu, Jing and Zhu, Yiling and Liu, Xinhai and Xu, Lixin and Hu, Changrong and Huang, Tianyu and Wang, Lifu and Zhang, Jihong and Chen, Meng and Dong, Liang and Jia, Yiwen and Cai, Yulin and Yu, Jiaao and Tang, Yixuan and Zhang, Hao and Ye, Zheng and He, Peng and Wu, Runzhou and Zhang, Chao and Tan, Yonghao and Xiao, Jie and Tao, Yangyu and Zhu, Jianchen and Xue, Jinbao and Liu, Kai and Zhao, Chongqing and Wu, Xinming and Hu, Zhichao and Qin, Lei and Peng, Jianbing and Li, Zhan and Chen, Minghui and Zhang, Xipeng and Niu, Lin and Wang, Paige and Wang, Yingkai and Kuang, Haozhao and Fan, Zhongyi and Zheng, Xu and Zhuang, Weihao and He, YingPing and Liu, Tian and Yang, Yong and Wang, Di and Liu, Yuhong and Jiang, Jie and Huang, Jingwei and Guo, Chunchao},
+  year = {2025},
+  month = jan,
+  number = {arXiv:2501.12202},
+  eprint = {2501.12202},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2501.12202},
+  urldate = {2025-01-28},
+  abstract = {We present Hunyuan3D 2.0, an advanced large-scale 3D synthesis system for generating high-resolution textured 3D assets. This system includes two foundation components: a large-scale shape generation model -- Hunyuan3D-DiT, and a large-scale texture synthesis model -- Hunyuan3D-Paint. The shape generative model, built on a scalable flow-based diffusion transformer, aims to create geometry that properly aligns with a given condition image, laying a solid foundation for downstream applications. The texture synthesis model, benefiting from strong geometric and diffusion priors, produces high-resolution and vibrant texture maps for either generated or hand-crafted meshes. Furthermore, we build Hunyuan3D-Studio -- a versatile, user-friendly production platform that simplifies the re-creation process of 3D assets. It allows both professional and amateur users to manipulate or even animate their meshes efficiently. We systematically evaluate our models, showing that Hunyuan3D 2.0 outperforms previous state-of-the-art models, including the open-source models and closed-source models in geometry details, condition alignment, texture quality, and etc. Hunyuan3D 2.0 is publicly released in order to fill the gaps in the open-source 3D community for large-scale foundation generative models. The code and pre-trained weights of our models are available at: https://github.com/Tencent/Hunyuan3D-2},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/QCKPT9XK/Zhao et al. - 2025 - Hunyuan3D 2.0 Scaling Diffusion Models for High Resolution Textured 3D Assets Generation.pdf;/home/navid/Zotero/storage/LQWDZBMD/2501.html}
 }
 
 @misc{zhengBridgingGlobalContext2021,
