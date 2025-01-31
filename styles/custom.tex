@@ -16,6 +16,9 @@
 	\end{tcolorbox}
 }
 
+
+\newcommand*\subtxt[1]{_{\textnormal{\lr{#1}}}}
+\DeclareRobustCommand\_{\ifmmode\expandafter\subtxt\else\textunderscore\fi}
 \newcommand{\OPT}{\ensuremath{\mathop{\mathrm{OPT}}}}
 \newcommand{\APX}{\ensuremath{\mathop{\mathrm{APX}}}}
 \newcommand{\ALG}{\ensuremath{\mathop{\mathrm{ALG}}}}
