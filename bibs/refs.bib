@@ -1,3 +1,21 @@
+@misc{agostinelliMusicLMGeneratingMusic2023,
+  title = {{{MusicLM}}: {{Generating Music From Text}}},
+  shorttitle = {{{MusicLM}}},
+  author = {Agostinelli, Andrea and Denk, Timo I. and Borsos, Zal{\'a}n and Engel, Jesse and Verzetti, Mauro and Caillon, Antoine and Huang, Qingqing and Jansen, Aren and Roberts, Adam and Tagliasacchi, Marco and Sharifi, Matt and Zeghidour, Neil and Frank, Christian},
+  year = {2023},
+  month = jan,
+  number = {arXiv:2301.11325},
+  eprint = {2301.11325},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2301.11325},
+  urldate = {2025-02-11},
+  abstract = {We introduce MusicLM, a model generating high-fidelity music from text descriptions such as "a calming violin melody backed by a distorted guitar riff". MusicLM casts the process of conditional music generation as a hierarchical sequence-to-sequence modeling task, and it generates music at 24 kHz that remains consistent over several minutes. Our experiments show that MusicLM outperforms previous systems both in audio quality and adherence to the text description. Moreover, we demonstrate that MusicLM can be conditioned on both text and a melody in that it can transform whistled and hummed melodies according to the style described in a text caption. To support future research, we publicly release MusicCaps, a dataset composed of 5.5k music-text pairs, with rich text descriptions provided by human experts.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing},
+  file = {/home/navid/Zotero/storage/2WZBANK8/Agostinelli et al. - 2023 - MusicLM Generating Music From Text.pdf;/home/navid/Zotero/storage/VDYGI2QV/2301.html}
+}
+
 @misc{bahdanauNeuralMachineTranslation2016,
   title = {Neural {{Machine Translation}} by {{Jointly Learning}} to {{Align}} and {{Translate}}},
   author = {Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua},
@@ -79,7 +97,7 @@
   file = {/home/navid/Zotero/storage/I9GYEEYD/Bertalmío et al. - 2000 - Image inpainting.pdf}
 }
 
-@misc{borsosAudioLMLanguageModeling2023,
+@misc{borsosAudioLMLanguageModeling2023a,
   title = {{{AudioLM}}: A {{Language Modeling Approach}} to {{Audio Generation}}},
   shorttitle = {{{AudioLM}}},
   author = {Borsos, Zal{\'a}n and Marinier, Rapha{\"e}l and Vincent, Damien and Kharitonov, Eugene and Pietquin, Olivier and Sharifi, Matt and Roblek, Dominik and Teboul, Olivier and Grangier, David and Tagliasacchi, Marco and Zeghidour, Neil},
@@ -90,11 +108,11 @@
   primaryclass = {cs},
   publisher = {arXiv},
   doi = {10.48550/arXiv.2209.03143},
-  urldate = {2025-01-28},
+  urldate = {2025-04-25},
   abstract = {We introduce AudioLM, a framework for high-quality audio generation with long-term consistency. AudioLM maps the input audio to a sequence of discrete tokens and casts audio generation as a language modeling task in this representation space. We show how existing audio tokenizers provide different trade-offs between reconstruction quality and long-term structure, and we propose a hybrid tokenization scheme to achieve both objectives. Namely, we leverage the discretized activations of a masked language model pre-trained on audio to capture long-term structure and the discrete codes produced by a neural audio codec to achieve high-quality synthesis. By training on large corpora of raw audio waveforms, AudioLM learns to generate natural and coherent continuations given short prompts. When trained on speech, and without any transcript or annotation, AudioLM generates syntactically and semantically plausible speech continuations while also maintaining speaker identity and prosody for unseen speakers. Furthermore, we demonstrate how our approach extends beyond speech by generating coherent piano music continuations, despite being trained without any symbolic representation of music.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing},
-  file = {/home/navid/Zotero/storage/BP9W8E5C/Borsos et al. - 2023 - AudioLM a Language Modeling Approach to Audio Generation.pdf;/home/navid/Zotero/storage/ERNI2DRU/2209.html}
+  file = {/home/navid/Zotero/storage/4AZC7Q9B/Borsos et al. - 2023 - AudioLM a Language Modeling Approach to Audio Generation.pdf;/home/navid/Zotero/storage/HLSIPGYC/2209.html}
 }
 
 @misc{borsosSoundStormEfficientParallel2023,
@@ -200,6 +218,23 @@
   file = {/home/navid/Zotero/storage/K97J2X6U/Chen et al. - 2018 - Learning to See in the Dark.pdf;/home/navid/Zotero/storage/ZN9D244J/1805.html}
 }
 
+@misc{choElevatingFlowGuidedVideo2024,
+  title = {Elevating {{Flow-Guided Video Inpainting}} with {{Reference Generation}}},
+  author = {Cho, Suhwan and Oh, Seoung Wug and Lee, Sangyoun and Lee, Joon-Young},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.08975},
+  eprint = {2412.08975},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.08975},
+  urldate = {2025-03-06},
+  abstract = {Video inpainting (VI) is a challenging task that requires effective propagation of observable content across frames while simultaneously generating new content not present in the original video. In this study, we propose a robust and practical VI framework that leverages a large generative model for reference generation in combination with an advanced pixel propagation algorithm. Powered by a strong generative model, our method not only significantly enhances frame-level quality for object removal but also synthesizes new content in the missing areas based on user-provided text prompts. For pixel propagation, we introduce a one-shot pixel pulling method that effectively avoids error accumulation from repeated sampling while maintaining sub-pixel precision. To evaluate various VI methods in realistic scenarios, we also propose a high-quality VI benchmark, HQVI, comprising carefully generated videos using alpha matte composition. On public benchmarks and the HQVI dataset, our method demonstrates significantly higher visual quality and metric scores compared to existing solutions. Furthermore, it can process high-resolution videos exceeding 2K resolution with ease, underscoring its superiority for real-world applications.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/Q8AZDQTT/Cho et al. - 2024 - Elevating Flow-Guided Video Inpainting with Reference Generation.pdf;/home/navid/Zotero/storage/83JJYLC7/2412.html;/home/navid/Zotero/storage/F95ISZ4X/2412.html}
+}
+
 @misc{cimpoiDescribingTexturesWild2013,
   title = {Describing {{Textures}} in the {{Wild}}},
   author = {Cimpoi, Mircea and Maji, Subhransu and Kokkinos, Iasonas and Mohamed, Sammy and Vedaldi, Andrea},
@@ -241,6 +276,42 @@
   year = {2019},
   month = mar,
   timestamp = {2019-03-12}
+}
+
+@misc{daoFlashAttention2FasterAttention2023,
+  title = {{{FlashAttention-2}}: {{Faster Attention}} with {{Better Parallelism}} and {{Work Partitioning}}},
+  shorttitle = {{{FlashAttention-2}}},
+  author = {Dao, Tri},
+  year = {2023},
+  month = jul,
+  number = {arXiv:2307.08691},
+  eprint = {2307.08691},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2307.08691},
+  urldate = {2025-02-11},
+  abstract = {Scaling Transformers to longer sequence lengths has been a major problem in the last several years, promising to improve performance in language modeling and high-resolution image understanding, as well as to unlock new applications in code, audio, and video generation. The attention layer is the main bottleneck in scaling to longer sequences, as its runtime and memory increase quadratically in the sequence length. FlashAttention exploits the asymmetric GPU memory hierarchy to bring significant memory saving (linear instead of quadratic) and runtime speedup (2-4\${\textbackslash}times\$ compared to optimized baselines), with no approximation. However, FlashAttention is still not nearly as fast as optimized matrix-multiply (GEMM) operations, reaching only 25-40{\textbackslash}\% of the theoretical maximum FLOPs/s. We observe that the inefficiency is due to suboptimal work partitioning between different thread blocks and warps on the GPU, causing either low-occupancy or unnecessary shared memory reads/writes. We propose FlashAttention-2, with better work partitioning to address these issues. In particular, we (1) tweak the algorithm to reduce the number of non-matmul FLOPs (2) parallelize the attention computation, even for a single head, across different thread blocks to increase occupancy, and (3) within each thread block, distribute the work between warps to reduce communication through shared memory. These yield around 2\${\textbackslash}times\$ speedup compared to FlashAttention, reaching 50-73{\textbackslash}\% of the theoretical maximum FLOPs/s on A100 and getting close to the efficiency of GEMM operations. We empirically validate that when used end-to-end to train GPT-style models, FlashAttention-2 reaches training speed of up to 225 TFLOPs/s per A100 GPU (72{\textbackslash}\% model FLOPs utilization).},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning},
+  file = {/home/navid/Zotero/storage/TLZPVW3B/Dao - 2023 - FlashAttention-2 Faster Attention with Better Parallelism and Work Partitioning.pdf;/home/navid/Zotero/storage/945AUZ8W/2307.html}
+}
+
+@misc{daoFlashAttentionFastMemoryEfficient2022,
+  title = {{{FlashAttention}}: {{Fast}} and {{Memory-Efficient Exact Attention}} with {{IO-Awareness}}},
+  shorttitle = {{{FlashAttention}}},
+  author = {Dao, Tri and Fu, Daniel Y. and Ermon, Stefano and Rudra, Atri and R{\'e}, Christopher},
+  year = {2022},
+  month = jun,
+  number = {arXiv:2205.14135},
+  eprint = {2205.14135},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2205.14135},
+  urldate = {2025-02-11},
+  abstract = {Transformers are slow and memory-hungry on long sequences, since the time and memory complexity of self-attention are quadratic in sequence length. Approximate attention methods have attempted to address this problem by trading off model quality to reduce the compute complexity, but often do not achieve wall-clock speedup. We argue that a missing principle is making attention algorithms IO-aware -- accounting for reads and writes between levels of GPU memory. We propose FlashAttention, an IO-aware exact attention algorithm that uses tiling to reduce the number of memory reads/writes between GPU high bandwidth memory (HBM) and GPU on-chip SRAM. We analyze the IO complexity of FlashAttention, showing that it requires fewer HBM accesses than standard attention, and is optimal for a range of SRAM sizes. We also extend FlashAttention to block-sparse attention, yielding an approximate attention algorithm that is faster than any existing approximate attention method. FlashAttention trains Transformers faster than existing baselines: 15\% end-to-end wall-clock speedup on BERT-large (seq. length 512) compared to the MLPerf 1.1 training speed record, 3\${\textbackslash}times\$ speedup on GPT-2 (seq. length 1K), and 2.4\${\textbackslash}times\$ speedup on long-range arena (seq. length 1K-4K). FlashAttention and block-sparse FlashAttention enable longer context in Transformers, yielding higher quality models (0.7 better perplexity on GPT-2 and 6.4 points of lift on long-document classification) and entirely new capabilities: the first Transformers to achieve better-than-chance performance on the Path-X challenge (seq. length 16K, 61.4\% accuracy) and Path-256 (seq. length 64K, 63.1\% accuracy).},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning},
+  file = {/home/navid/Zotero/storage/MQNDYJDZ/Dao et al. - 2022 - FlashAttention Fast and Memory-Efficient Exact Attention with IO-Awareness.pdf;/home/navid/Zotero/storage/TUGGHX93/2205.html}
 }
 
 @misc{deepseek-aiDeepSeekR1IncentivizingReasoning2025,
@@ -314,6 +385,49 @@
   file = {/home/navid/Zotero/storage/6DQ8W7Y3/Deng et al. - 2022 - T-former An Efficient Transformer for Image Inpainting.pdf;/home/navid/Zotero/storage/NCYY463W/2305.html}
 }
 
+@misc{devlinBERTPretrainingDeep2019,
+  title = {{{BERT}}: {{Pre-training}} of {{Deep Bidirectional Transformers}} for {{Language Understanding}}},
+  shorttitle = {{{BERT}}},
+  author = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  year = {2019},
+  month = may,
+  number = {arXiv:1810.04805},
+  eprint = {1810.04805},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1810.04805},
+  urldate = {2025-02-18},
+  abstract = {We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5\% (7.7\% point absolute improvement), MultiNLI accuracy to 86.7\% (4.6\% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language},
+  file = {/home/navid/Zotero/storage/T48SW2A4/Devlin et al. - 2019 - BERT Pre-training of Deep Bidirectional Transformers for Language Understanding.pdf;/home/navid/Zotero/storage/FR9TDJM9/1810.html}
+}
+
+@article{domhanSpeedingAutomaticHyperparameter,
+  title = {Speeding up {{Automatic Hyperparameter Optimization}} of {{Deep Neural Networks}} by {{Extrapolation}} of {{Learning Curves}}},
+  author = {Domhan, Tobias and Springenberg, Jost Tobias and Hutter, Frank},
+  abstract = {Deep neural networks (DNNs) show very strong performance on many machine learning problems, but they are very sensitive to the setting of their hyperparameters. Automated hyperparameter optimization methods have recently been shown to yield settings competitive with those found by human experts, but their widespread adoption is hampered by the fact that they require more computational resources than human experts. Humans have one advantage: when they evaluate a poor hyperparameter setting they can quickly detect (after a few steps of stochastic gradient descent) that the resulting network performs poorly and terminate the corresponding evaluation to save time. In this paper, we mimic the early termination of bad runs using a probabilistic model that extrapolates the performance from the first part of a learning curve. Experiments with a broad range of neural network architectures on various prominent object recognition benchmarks show that our resulting approach speeds up state-of-the-art hyperparameter optimization methods for DNNs roughly twofold, enabling them to find DNN settings that yield better performance than those chosen by human experts.},
+  langid = {english},
+  file = {/home/navid/Zotero/storage/DI8443GH/Domhan et al. - Speeding up Automatic Hyperparameter Optimization of Deep Neural Networks by Extrapolation of Learni.pdf}
+}
+
+@misc{dongImageSuperResolutionUsing2015,
+  title = {Image {{Super-Resolution Using Deep Convolutional Networks}}},
+  author = {Dong, Chao and Loy, Chen Change and He, Kaiming and Tang, Xiaoou},
+  year = {2015},
+  month = jul,
+  number = {arXiv:1501.00092},
+  eprint = {1501.00092},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1501.00092},
+  urldate = {2025-02-11},
+  abstract = {We propose a deep learning method for single image super-resolution (SR). Our method directly learns an end-to-end mapping between the low/high-resolution images. The mapping is represented as a deep convolutional neural network (CNN) that takes the low-resolution image as the input and outputs the high-resolution one. We further show that traditional sparse-coding-based SR methods can also be viewed as a deep convolutional network. But unlike traditional methods that handle each component separately, our method jointly optimizes all layers. Our deep CNN has a lightweight structure, yet demonstrates state-of-the-art restoration quality, and achieves fast speed for practical on-line usage. We explore different network structures and parameter settings to achieve trade-offs between performance and speed. Moreover, we extend our network to cope with three color channels simultaneously, and show better overall reconstruction quality.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Neural and Evolutionary Computing},
+  file = {/home/navid/Zotero/storage/MM2ZH5CH/Dong et al. - 2015 - Image Super-Resolution Using Deep Convolutional Networks.pdf;/home/navid/Zotero/storage/CHVTCE94/1501.html}
+}
+
 @misc{dosovitskiyImageWorth16x162021,
   title = {An {{Image}} Is {{Worth}} 16x16 {{Words}}: {{Transformers}} for {{Image Recognition}} at {{Scale}}},
   shorttitle = {An {{Image}} Is {{Worth}} 16x16 {{Words}}},
@@ -330,6 +444,24 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
   file = {/home/navid/Zotero/storage/85Q4YY2X/Dosovitskiy et al. - 2021 - An Image is Worth 16x16 Words Transformers for Image Recognition at Scale.pdf;/home/navid/Zotero/storage/A8XHW3NI/2010.html}
+}
+
+@misc{duPPOCRv2BagTricks2021,
+  title = {{{PP-OCRv2}}: {{Bag}} of {{Tricks}} for {{Ultra Lightweight OCR System}}},
+  shorttitle = {{{PP-OCRv2}}},
+  author = {Du, Yuning and Li, Chenxia and Guo, Ruoyu and Cui, Cheng and Liu, Weiwei and Zhou, Jun and Lu, Bin and Yang, Yehua and Liu, Qiwen and Hu, Xiaoguang and Yu, Dianhai and Ma, Yanjun},
+  year = {2021},
+  month = oct,
+  number = {arXiv:2109.03144},
+  eprint = {2109.03144},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2109.03144},
+  urldate = {2025-04-25},
+  abstract = {Optical Character Recognition (OCR) systems have been widely used in various of application scenarios. Designing an OCR system is still a challenging task. In previous work, we proposed a practical ultra lightweight OCR system (PP-OCR) to balance the accuracy against the efficiency. In order to improve the accuracy of PP-OCR and keep high efficiency, in this paper, we propose a more robust OCR system, i.e. PP-OCRv2. We introduce bag of tricks to train a better text detector and a better text recognizer, which include Collaborative Mutual Learning (CML), CopyPaste, Lightweight CPUNetwork (LCNet), Unified-Deep Mutual Learning (U-DML) and Enhanced CTCLoss. Experiments on real data show that the precision of PP-OCRv2 is 7\% higher than PP-OCR under the same inference cost. It is also comparable to the server models of the PP-OCR which uses ResNet series as backbones. All of the above mentioned models are open-sourced and the code is available in the GitHub repository PaddleOCR which is powered by PaddlePaddle.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/8BK2IRNU/Du et al. - 2021 - PP-OCRv2 Bag of Tricks for Ultra Lightweight OCR System.pdf;/home/navid/Zotero/storage/R9533XAC/Deep Learning by Ian Goodfellow, Yoshua Bengio, Aaron Courville (z-lib.org).pdf;/home/navid/Zotero/storage/AVPK9LIA/2109.html}
 }
 
 @article{elharroussImageInpaintingReview2020,
@@ -353,22 +485,42 @@
   file = {/home/navid/Zotero/storage/4IU2BHYH/Elharrouss et al. - 2020 - Image inpainting A review.pdf;/home/navid/Zotero/storage/DN3VVSNK/1909.html}
 }
 
-@misc{elharroussTransformerbasedImageVideo2024,
+@article{elharroussTransformerbasedImageVideo2025,
   title = {Transformer-Based {{Image}} and {{Video Inpainting}}: {{Current Challenges}} and {{Future Directions}}},
   shorttitle = {Transformer-Based {{Image}} and {{Video Inpainting}}},
   author = {Elharrouss, Omar and Damseh, Rafat and Belkacem, Abdelkader Nasreddine and Badidi, Elarbi and Lakas, Abderrahmane},
-  year = {2024},
-  month = jun,
-  number = {arXiv:2407.00226},
+  year = {2025},
+  month = feb,
+  journal = {Artificial Intelligence Review},
+  volume = {58},
+  number = {4},
   eprint = {2407.00226},
   primaryclass = {cs},
-  publisher = {arXiv},
-  doi = {10.48550/arXiv.2407.00226},
-  urldate = {2025-01-15},
+  pages = {124},
+  issn = {1573-7462},
+  doi = {10.1007/s10462-024-11075-9},
+  urldate = {2025-02-15},
   abstract = {Image inpainting is currently a hot topic within the field of computer vision. It offers a viable solution for various applications, including photographic restoration, video editing, and medical imaging. Deep learning advancements, notably convolutional neural networks (CNNs) and generative adversarial networks (GANs), have significantly enhanced the inpainting task with an improved capability to fill missing or damaged regions in an image or video through the incorporation of contextually appropriate details. These advancements have improved other aspects, including efficiency, information preservation, and achieving both realistic textures and structures. Recently, visual transformers have been exploited and offer some improvements to image or video inpainting. The advent of transformer-based architectures, which were initially designed for natural language processing, has also been integrated into computer vision tasks. These methods utilize self-attention mechanisms that excel in capturing long-range dependencies within data; therefore, they are particularly effective for tasks requiring a comprehensive understanding of the global context of an image or video. In this paper, we provide a comprehensive review of the current image or video inpainting approaches, with a specific focus on transformer-based techniques, with the goal to highlight the significant improvements and provide a guideline for new researchers in the field of image or video inpainting using visual transformers. We categorized the transformer-based techniques by their architectural configurations, types of damage, and performance metrics. Furthermore, we present an organized synthesis of the current challenges, and suggest directions for future research in the field of image or video inpainting.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
-  file = {/home/navid/Zotero/storage/JLA6FSIQ/Elharrouss et al. - 2024 - Transformer-based Image and Video Inpainting Current Challenges and Future Directions.pdf;/home/navid/Zotero/storage/NYIF9K8N/2407.html}
+  file = {/home/navid/Zotero/storage/8TM2AZI4/Elharrouss et al. - 2025 - Transformer-based Image and Video Inpainting Current Challenges and Future Directions.pdf;/home/navid/Zotero/storage/6SW23FWK/2407.html}
+}
+
+@misc{gaoFlowedgeGuidedVideo2020,
+  title = {Flow-Edge {{Guided Video Completion}}},
+  author = {Gao, Chen and Saraf, Ayush and Huang, Jia-Bin and Kopf, Johannes},
+  year = {2020},
+  month = sep,
+  number = {arXiv:2009.01835},
+  eprint = {2009.01835},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2009.01835},
+  urldate = {2025-03-07},
+  abstract = {We present a new flow-based video completion algorithm. Previous flow completion methods are often unable to retain the sharpness of motion boundaries. Our method first extracts and completes motion edges, and then uses them to guide piecewise-smooth flow completion with sharp edges. Existing methods propagate colors among local flow connections between adjacent frames. However, not all missing regions in a video can be reached in this way because the motion boundaries form impenetrable barriers. Our method alleviates this problem by introducing non-local flow connections to temporally distant frames, enabling propagating video content over motion boundaries. We validate our approach on the DAVIS dataset. Both visual and quantitative results show that our method compares favorably against the state-of-the-art algorithms.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/HUPLF8N8/Gao et al. - 2020 - Flow-edge Guided Video Completion.pdf;/home/navid/Zotero/storage/YJCRL4IC/2009.html}
 }
 
 @misc{goodfellowGenerativeAdversarialNetworks2014,
@@ -506,6 +658,24 @@
   file = {/home/navid/Zotero/storage/9M9IP8M4/Howard et al. - 2017 - MobileNets Efficient Convolutional Neural Networks for Mobile Vision Applications.pdf;/home/navid/Zotero/storage/2C6U6Z3Z/1704.html}
 }
 
+@misc{huangGameFormerGametheoreticModeling2023,
+  title = {{{GameFormer}}: {{Game-theoretic Modeling}} and {{Learning}} of {{Transformer-based Interactive Prediction}} and {{Planning}} for {{Autonomous Driving}}},
+  shorttitle = {{{GameFormer}}},
+  author = {Huang, Zhiyu and Liu, Haochen and Lv, Chen},
+  year = {2023},
+  month = aug,
+  number = {arXiv:2303.05760},
+  eprint = {2303.05760},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2303.05760},
+  urldate = {2025-02-18},
+  abstract = {Autonomous vehicles operating in complex real-world environments require accurate predictions of interactive behaviors between traffic participants. This paper tackles the interaction prediction problem by formulating it with hierarchical game theory and proposing the GameFormer model for its implementation. The model incorporates a Transformer encoder, which effectively models the relationships between scene elements, alongside a novel hierarchical Transformer decoder structure. At each decoding level, the decoder utilizes the prediction outcomes from the previous level, in addition to the shared environmental context, to iteratively refine the interaction process. Moreover, we propose a learning process that regulates an agent's behavior at the current level to respond to other agents' behaviors from the preceding level. Through comprehensive experiments on large-scale real-world driving datasets, we demonstrate the state-of-the-art accuracy of our model on the Waymo interaction prediction task. Additionally, we validate the model's capacity to jointly reason about the motion plan of the ego agent and the behaviors of multiple agents in both open-loop and closed-loop planning tests, outperforming various baseline methods. Furthermore, we evaluate the efficacy of our model on the nuPlan planning benchmark, where it achieves leading performance.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Robotics},
+  file = {/home/navid/Zotero/storage/H9XLSR54/Huang et al. - 2023 - GameFormer Game-theoretic Modeling and Learning of Transformer-based Interactive Prediction and Pla.pdf;/home/navid/Zotero/storage/YXLNMBFD/2303.html}
+}
+
 @misc{huangIntroVAEIntrospectiveVariational2018,
   title = {{{IntroVAE}}: {{Introspective Variational Autoencoders}} for {{Photographic Image Synthesis}}},
   shorttitle = {{{IntroVAE}}},
@@ -573,6 +743,24 @@
   file = {/home/navid/Zotero/storage/Y2FYX75L/Jiang et al. - 2024 - Mixtral of Experts.pdf;/home/navid/Zotero/storage/Q54QYACN/2401.html}
 }
 
+@misc{jiaoTinyBERTDistillingBERT2020,
+  title = {{{TinyBERT}}: {{Distilling BERT}} for {{Natural Language Understanding}}},
+  shorttitle = {{{TinyBERT}}},
+  author = {Jiao, Xiaoqi and Yin, Yichun and Shang, Lifeng and Jiang, Xin and Chen, Xiao and Li, Linlin and Wang, Fang and Liu, Qun},
+  year = {2020},
+  month = oct,
+  number = {arXiv:1909.10351},
+  eprint = {1909.10351},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1909.10351},
+  urldate = {2025-02-18},
+  abstract = {Language model pre-training, such as BERT, has significantly improved the performances of many natural language processing tasks. However, pre-trained language models are usually computationally expensive, so it is difficult to efficiently execute them on resource-restricted devices. To accelerate inference and reduce model size while maintaining accuracy, we first propose a novel Transformer distillation method that is specially designed for knowledge distillation (KD) of the Transformer-based models. By leveraging this new KD method, the plenty of knowledge encoded in a large teacher BERT can be effectively transferred to a small student Tiny-BERT. Then, we introduce a new two-stage learning framework for TinyBERT, which performs Transformer distillation at both the pretraining and task-specific learning stages. This framework ensures that TinyBERT can capture he general-domain as well as the task-specific knowledge in BERT. TinyBERT with 4 layers is empirically effective and achieves more than 96.8\% the performance of its teacher BERTBASE on GLUE benchmark, while being 7.5x smaller and 9.4x faster on inference. TinyBERT with 4 layers is also significantly better than 4-layer state-of-the-art baselines on BERT distillation, with only about 28\% parameters and about 31\% inference time of them. Moreover, TinyBERT with 6 layers performs on-par with its teacher BERTBASE.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {/home/navid/Zotero/storage/Y8W77M5G/Jiao et al. - 2020 - TinyBERT Distilling BERT for Natural Language Understanding.pdf;/home/navid/Zotero/storage/ZPUVIZ7R/1909.html}
+}
+
 @misc{johnsonPerceptualLossesRealTime2016,
   title = {Perceptual {{Losses}} for {{Real-Time Style Transfer}} and {{Super-Resolution}}},
   author = {Johnson, Justin and Alahi, Alexandre and {Fei-Fei}, Li},
@@ -606,6 +794,22 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
   file = {/home/navid/Zotero/storage/4V6CXBMM/Jo and Park - 2019 - SC-FEGAN Face Editing Generative Adversarial Network with User's Sketch and Color.pdf;/home/navid/Zotero/storage/KVU6ZZ7M/1902.html}
+}
+
+@inproceedings{kaplanyanFilteringDistributionsNormals2016,
+  title = {Filtering Distributions of Normals for Shading Antialiasing},
+  booktitle = {Proceedings of {{High Performance Graphics}}},
+  author = {Kaplanyan, A. S. and Hill, S. and Patney, A. and Lefohn, A.},
+  year = {2016},
+  month = jun,
+  series = {{{HPG}} '16},
+  pages = {151--162},
+  publisher = {Eurographics Association},
+  address = {Goslar, DEU},
+  urldate = {2025-05-14},
+  abstract = {High-frequency illumination effects, such as highly glossy highlights on curved surfaces, are challenging to render in a stable manner. Such features can be much smaller than the area of a pixel and carry a high amount of energy due to high reflectance. These highlights are challenging to render in both offline rendering, where they require many samples and an outliers filter, and in real-time graphics, where they cause a significant amount of aliasing given the small budget of shading samples per pixel. In this paper, we propose a method for filtering the main source of highly glossy highlights in microfacet materials: the Normal Distribution Function (NDF). We provide a practical solution applicable for real-time rendering by employing recent advances in light transport for estimating the filtering region from various effects (such as pixel footprint) directly in the parallel-plane half-vector domain (also known as the slope domain), followed by filtering the NDF over this region. Our real-time method is GPU-friendly, temporally stable, and compatible with deferred shading, normal maps, as well as with filtering methods for normal maps.},
+  isbn = {978-3-03868-008-6},
+  file = {/home/navid/Zotero/storage/Q2J77XDK/Kaplanyan et al. - 2016 - Filtering distributions of normals for shading antialiasing.pdf}
 }
 
 @misc{karrasAliasFreeGenerativeAdversarial2021,
@@ -676,6 +880,41 @@
   file = {/home/navid/Zotero/storage/TPXLH7WY/Karras et al. - 2019 - A Style-Based Generator Architecture for Generative Adversarial Networks.pdf;/home/navid/Zotero/storage/V359HC7S/1812.html}
 }
 
+@inproceedings{khanfirGraphNeuralNetworks2024,
+  title = {Graph {{Neural Networks}} for {{End-to-End Information Extraction}} from {{Handwritten Documents}}},
+  booktitle = {2024 {{IEEE}}/{{CVF Winter Conference}} on {{Applications}} of {{Computer Vision}} ({{WACV}})},
+  author = {Khanfir, Yessine and Dhiaf, Marwa and Ghodhbani, Emna and Rouhou, Ahmed Cheikh and Kessentini, Yousri},
+  year = {2024},
+  month = jan,
+  pages = {493--501},
+  publisher = {IEEE},
+  address = {Waikoloa, HI, USA},
+  doi = {10.1109/WACV57701.2024.00056},
+  urldate = {2025-04-25},
+  abstract = {Automating Information Extraction (IE) from handwritten documents is a challenging task due to the wide variety of handwriting styles, the presence of noise, and the lack of labeled data. In this work, we propose an end-toend encoder-decoder model, that incorporates transformers and Graph Convolutional Networks (GCN), to jointly perform Handwritten Text Recognition (HTR) and Named Entity Recognition (NER). The proposed architecture is mainly composed of two parts: a Sparse Graph Transformer Encoder (SGTE), to capture efficient representations of input text images while controlling the propagation of information through the model. The SGTE is followed by a transformer decoder enhanced with a GCN that combines the outputs of the last SGTE layer and the Multi-Head Attention (MHA) block to reinforce the alignment of visual features to characters and Named Entity (NE) tags, resulting in more robust learned representations. The proposed model shows promising results and achieves state-of-the-art performance on the IAM dataset, and in the ICDAR 2017 Information Extraction competition using the Esposalles database.},
+  copyright = {https://doi.org/10.15223/policy-029},
+  isbn = {979-8-3503-1892-0},
+  langid = {english},
+  file = {/home/navid/Zotero/storage/IY8G9INJ/Khanfir et al. - 2024 - Graph Neural Networks for End-to-End Information Extraction from Handwritten Documents.pdf}
+}
+
+@misc{kimOCRfreeDocumentUnderstanding2022,
+  title = {{{OCR-free Document Understanding Transformer}}},
+  author = {Kim, Geewook and Hong, Teakgyu and Yim, Moonbin and Nam, Jeongyeon and Park, Jinyoung and Yim, Jinyeong and Hwang, Wonseok and Yun, Sangdoo and Han, Dongyoon and Park, Seunghyun},
+  year = {2022},
+  month = oct,
+  number = {arXiv:2111.15664},
+  eprint = {2111.15664},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2111.15664},
+  urldate = {2025-04-25},
+  abstract = {Understanding document images (e.g., invoices) is a core but challenging task since it requires complex functions such as reading text and a holistic understanding of the document. Current Visual Document Understanding (VDU) methods outsource the task of reading text to off-the-shelf Optical Character Recognition (OCR) engines and focus on the understanding task with the OCR outputs. Although such OCR-based approaches have shown promising performance, they suffer from 1) high computational costs for using OCR; 2) inflexibility of OCR models on languages or types of document; 3) OCR error propagation to the subsequent process. To address these issues, in this paper, we introduce a novel OCR-free VDU model named Donut, which stands for Document understanding transformer. As the first step in OCR-free VDU research, we propose a simple architecture (i.e., Transformer) with a pre-training objective (i.e., cross-entropy loss). Donut is conceptually simple yet effective. Through extensive experiments and analyses, we show a simple OCR-free VDU model, Donut, achieves state-of-the-art performances on various VDU tasks in terms of both speed and accuracy. In addition, we offer a synthetic data generator that helps the model pre-training to be flexible in various languages and domains. The code, trained model and synthetic data are available at https://github.com/clovaai/donut.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  file = {/home/navid/Zotero/storage/9QRGP8XC/Kim et al. - 2022 - OCR-free Document Understanding Transformer.pdf;/home/navid/Zotero/storage/E9GAFDBF/2111.html}
+}
+
 @misc{kimTextureTransformAttention2020,
   title = {Texture {{Transform Attention}} for {{Realistic Image Inpainting}}},
   author = {Kim, Yejin and Cheon, Manri and Lee, Junwoo},
@@ -691,6 +930,24 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
   file = {/home/navid/Zotero/storage/SP6ZVCF6/Kim et al. - 2020 - Texture Transform Attention for Realistic Image Inpainting.pdf;/home/navid/Zotero/storage/ERBPSQVW/2012.html}
+}
+
+@misc{kongHiFiGANGenerativeAdversarial2020,
+  title = {{{HiFi-GAN}}: {{Generative Adversarial Networks}} for {{Efficient}} and {{High Fidelity Speech Synthesis}}},
+  shorttitle = {{{HiFi-GAN}}},
+  author = {Kong, Jungil and Kim, Jaehyeon and Bae, Jaekyoung},
+  year = {2020},
+  month = oct,
+  number = {arXiv:2010.05646},
+  eprint = {2010.05646},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2010.05646},
+  urldate = {2025-04-24},
+  abstract = {Several recent work on speech synthesis have employed generative adversarial networks (GANs) to produce raw waveforms. Although such methods improve the sampling efficiency and memory usage, their sample quality has not yet reached that of autoregressive and flow-based generative models. In this work, we propose HiFi-GAN, which achieves both efficient and high-fidelity speech synthesis. As speech audio consists of sinusoidal signals with various periods, we demonstrate that modeling periodic patterns of an audio is crucial for enhancing sample quality. A subjective human evaluation (mean opinion score, MOS) of a single speaker dataset indicates that our proposed method demonstrates similarity to human quality while generating 22.05 kHz high-fidelity audio 167.9 times faster than real-time on a single V100 GPU. We further show the generality of HiFi-GAN to the mel-spectrogram inversion of unseen speakers and end-to-end speech synthesis. Finally, a small footprint version of HiFi-GAN generates samples 13.4 times faster than real-time on CPU with comparable quality to an autoregressive counterpart.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing},
+  file = {/home/navid/Zotero/storage/7BBZ8V8J/Kong et al. - 2020 - HiFi-GAN Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis.pdf;/home/navid/Zotero/storage/MA45LD3L/2010.html}
 }
 
 @article{krizhevsky2012imagenet,
@@ -719,6 +976,23 @@
   file = {/home/navid/Zotero/storage/LTPNIA2F/Laube et al. - 2018 - Image Inpainting for High-Resolution Textures using CNN Texture Synthesis.pdf;/home/navid/Zotero/storage/P82USQBK/1712.html}
 }
 
+@misc{liEndtoEndFrameworkFlowGuided2022,
+  title = {Towards {{An End-to-End Framework}} for {{Flow-Guided Video Inpainting}}},
+  author = {Li, Zhen and Lu, Cheng-Ze and Qin, Jianhua and Guo, Chun-Le and Cheng, Ming-Ming},
+  year = {2022},
+  month = apr,
+  number = {arXiv:2204.02663},
+  eprint = {2204.02663},
+  primaryclass = {eess},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2204.02663},
+  urldate = {2025-03-07},
+  abstract = {Optical flow, which captures motion information across frames, is exploited in recent video inpainting methods through propagating pixels along its trajectories. However, the hand-crafted flow-based processes in these methods are applied separately to form the whole inpainting pipeline. Thus, these methods are less efficient and rely heavily on the intermediate results from earlier stages. In this paper, we propose an End-to-End framework for Flow-Guided Video Inpainting (E\${\textasciicircum}2\$FGVI) through elaborately designed three trainable modules, namely, flow completion, feature propagation, and content hallucination modules. The three modules correspond with the three stages of previous flow-based methods but can be jointly optimized, leading to a more efficient and effective inpainting process. Experimental results demonstrate that the proposed method outperforms state-of-the-art methods both qualitatively and quantitatively and shows promising efficiency. The code is available at https://github.com/MCG-NKU/E2FGVI.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Electrical Engineering and Systems Science - Image and Video Processing},
+  file = {/home/navid/Zotero/storage/Q2PEXNVE/Li et al. - 2022 - Towards An End-to-End Framework for Flow-Guided Video Inpainting.pdf;/home/navid/Zotero/storage/LN2Y56H2/2204.html}
+}
+
 @misc{liMATMaskAwareTransformer2022,
   title = {{{MAT}}: {{Mask-Aware Transformer}} for {{Large Hole Image Inpainting}}},
   shorttitle = {{{MAT}}},
@@ -737,6 +1011,24 @@
   file = {/home/navid/Zotero/storage/MJDISS8F/Li et al. - 2022 - MAT Mask-Aware Transformer for Large Hole Image Inpainting.pdf;/home/navid/Zotero/storage/QUW5GM76/2203.html}
 }
 
+@misc{liPPOCRv3MoreAttempts2022,
+  title = {{{PP-OCRv3}}: {{More Attempts}} for the {{Improvement}} of {{Ultra Lightweight OCR System}}},
+  shorttitle = {{{PP-OCRv3}}},
+  author = {Li, Chenxia and Liu, Weiwei and Guo, Ruoyu and Yin, Xiaoting and Jiang, Kaitao and Du, Yongkun and Du, Yuning and Zhu, Lingfeng and Lai, Baohua and Hu, Xiaoguang and Yu, Dianhai and Ma, Yanjun},
+  year = {2022},
+  month = jun,
+  number = {arXiv:2206.03001},
+  eprint = {2206.03001},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2206.03001},
+  urldate = {2025-04-25},
+  abstract = {Optical character recognition (OCR) technology has been widely used in various scenes, as shown in Figure 1. Designing a practical OCR system is still a meaningful but challenging task. In previous work, considering the efficiency and accuracy, we proposed a practical ultra lightweight OCR system (PP-OCR), and an optimized version PP-OCRv2. In order to further improve the performance of PP-OCRv2, a more robust OCR system PP-OCRv3 is proposed in this paper. PP-OCRv3 upgrades the text detection model and text recognition model in 9 aspects based on PP-OCRv2. For text detector, we introduce a PAN module with large receptive field named LK-PAN, a FPN module with residual attention mechanism named RSE-FPN, and DML distillation strategy. For text recognizer, the base model is replaced from CRNN to SVTR, and we introduce lightweight text recognition network SVTR LCNet, guided training of CTC by attention, data augmentation strategy TextConAug, better pre-trained model by self-supervised TextRotNet, UDML, and UIM to accelerate the model and improve the effect. Experiments on real data show that the hmean of PP-OCRv3 is 5\% higher than PP-OCRv2 under comparable inference speed. All the above mentioned models are open-sourced and the code is available in the GitHub repository PaddleOCR which is powered by PaddlePaddle.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/EL294KAI/Li et al. - 2022 - PP-OCRv3 More Attempts for the Improvement of Ultra Lightweight OCR System.pdf;/home/navid/Zotero/storage/7DYZQYNZ/2206.html}
+}
+
 @misc{liRecurrentFeatureReasoning2020,
   title = {Recurrent {{Feature Reasoning}} for {{Image Inpainting}}},
   author = {Li, Jingyuan and Wang, Ning and Zhang, Lefei and Du, Bo and Tao, Dacheng},
@@ -752,6 +1044,42 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
   file = {/home/navid/Zotero/storage/EA55S3K2/Li et al. - 2020 - Recurrent Feature Reasoning for Image Inpainting.pdf;/home/navid/Zotero/storage/EYW7GS6M/2008.html}
+}
+
+@misc{liSTARTSelftaughtReasoner2025,
+  title = {{{START}}: {{Self-taught Reasoner}} with {{Tools}}},
+  shorttitle = {{{START}}},
+  author = {Li, Chengpeng and Xue, Mingfeng and Zhang, Zhenru and Yang, Jiaxi and Zhang, Beichen and Wang, Xiang and Yu, Bowen and Hui, Binyuan and Lin, Junyang and Liu, Dayiheng},
+  year = {2025},
+  month = mar,
+  number = {arXiv:2503.04625},
+  eprint = {2503.04625},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2503.04625},
+  urldate = {2025-03-07},
+  abstract = {Large reasoning models (LRMs) like OpenAI-o1 and DeepSeek-R1 have demonstrated remarkable capabilities in complex reasoning tasks through the utilization of long Chain-of-thought (CoT). However, these models often suffer from hallucinations and inefficiencies due to their reliance solely on internal reasoning processes. In this paper, we introduce START (Self-Taught Reasoner with Tools), a novel tool-integrated long CoT reasoning LLM that significantly enhances reasoning capabilities by leveraging external tools. Through code execution, START is capable of performing complex computations, self-checking, exploring diverse methods, and self-debugging, thereby addressing the limitations of LRMs. The core innovation of START lies in its self-learning framework, which comprises two key techniques: 1) Hint-infer: We demonstrate that inserting artificially designed hints (e.g., ``Wait, maybe using Python here is a good idea.'') during the inference process of a LRM effectively stimulates its ability to utilize external tools without the need for any demonstration data. Hint-infer can also serve as a simple and effective sequential test-time scaling method; 2) Hint Rejection Sampling Fine-Tuning (Hint-RFT): Hint-RFT combines Hint-infer and RFT by scoring, filtering, and modifying the reasoning trajectories with tool invocation generated by a LRM via Hint-infer, followed by fine-tuning the LRM. Through this framework, we have fine-tuned the QwQ-32B model to achieve START. On PhD-level science QA (GPQA), competition-level math benchmarks (AMC23, AIME24, AIME25), and the competition-level code benchmark (LiveCodeBench), START achieves accuracy rates of 63.6\%, 95.0\%, 66.7\%, 47.1\%, and 47.3\%, respectively. It significantly outperforms the base QwQ-32B and achieves performance comparable to the state-of-the-art open-weight model R1-Distill-Qwen-32B and the proprietary model o1-Preview.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language},
+  file = {/home/navid/Zotero/storage/KCN35RPA/Li et al. - 2025 - START Self-taught Reasoner with Tools.pdf;/home/navid/Zotero/storage/ICHQGS5W/2503.html}
+}
+
+@misc{liStyleTTS2HumanLevel2023,
+  title = {{{StyleTTS}} 2: {{Towards Human-Level Text-to-Speech}} through {{Style Diffusion}} and {{Adversarial Training}} with {{Large Speech Language Models}}},
+  shorttitle = {{{StyleTTS}} 2},
+  author = {Li, Yinghao Aaron and Han, Cong and Raghavan, Vinay S. and Mischler, Gavin and Mesgarani, Nima},
+  year = {2023},
+  month = nov,
+  number = {arXiv:2306.07691},
+  eprint = {2306.07691},
+  primaryclass = {eess},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2306.07691},
+  urldate = {2025-04-24},
+  abstract = {In this paper, we present StyleTTS 2, a text-to-speech (TTS) model that leverages style diffusion and adversarial training with large speech language models (SLMs) to achieve human-level TTS synthesis. StyleTTS 2 differs from its predecessor by modeling styles as a latent random variable through diffusion models to generate the most suitable style for the text without requiring reference speech, achieving efficient latent diffusion while benefiting from the diverse speech synthesis offered by diffusion models. Furthermore, we employ large pre-trained SLMs, such as WavLM, as discriminators with our novel differentiable duration modeling for end-to-end training, resulting in improved speech naturalness. StyleTTS 2 surpasses human recordings on the single-speaker LJSpeech dataset and matches it on the multispeaker VCTK dataset as judged by native English speakers. Moreover, when trained on the LibriTTS dataset, our model outperforms previous publicly available models for zero-shot speaker adaptation. This work achieves the first human-level TTS on both single and multispeaker datasets, showcasing the potential of style diffusion and adversarial training with large SLMs. The audio demos and source code are available at https://styletts2.github.io/.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing},
+  file = {/home/navid/Zotero/storage/QKLPXM9Y/Li et al. - 2023 - StyleTTS 2 Towards Human-Level Text-to-Speech through Style Diffusion and Adversarial Training with.pdf;/home/navid/Zotero/storage/XUK27F4E/2306.html}
 }
 
 @misc{liuDeepLearningFace2015,
@@ -822,6 +1150,24 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Cryptography and Security,Computer Science - Machine Learning,Computer Science - Networking and Internet Architecture},
   file = {/home/navid/Zotero/storage/ZFRYXWYR/Lotfollahi et al. - 2018 - Deep Packet A Novel Approach For Encrypted Traffic Classification Using Deep Learning.pdf;/home/navid/Zotero/storage/3SFTS563/1709.html}
+}
+
+@misc{mehtaMobileViTLightweightGeneralpurpose2022,
+  title = {{{MobileViT}}: {{Light-weight}}, {{General-purpose}}, and {{Mobile-friendly Vision Transformer}}},
+  shorttitle = {{{MobileViT}}},
+  author = {Mehta, Sachin and Rastegari, Mohammad},
+  year = {2022},
+  month = mar,
+  number = {arXiv:2110.02178},
+  eprint = {2110.02178},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2110.02178},
+  urldate = {2025-02-03},
+  abstract = {Light-weight convolutional neural networks (CNNs) are the de-facto for mobile vision tasks. Their spatial inductive biases allow them to learn representations with fewer parameters across different vision tasks. However, these networks are spatially local. To learn global representations, self-attention-based vision trans-formers (ViTs) have been adopted. Unlike CNNs, ViTs are heavy-weight. In this paper, we ask the following question: is it possible to combine the strengths of CNNs and ViTs to build a light-weight and low latency network for mobile vision tasks? Towards this end, we introduce MobileViT, a light-weight and general-purpose vision transformer for mobile devices. MobileViT presents a different perspective for the global processing of information with transformers, i.e., transformers as convolutions. Our results show that MobileViT significantly outperforms CNN- and ViT-based networks across different tasks and datasets. On the ImageNet-1k dataset, MobileViT achieves top-1 accuracy of 78.4\% with about 6 million parameters, which is 3.2\% and 6.2\% more accurate than MobileNetv3 (CNN-based) and DeIT (ViT-based) for a similar number of parameters. On the MS-COCO object detection task, MobileViT is 5.7\% more accurate than MobileNetv3 for a similar number of parameters. Our source code is open-source and available at: https://github.com/apple/ml-cvnets},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  file = {/home/navid/Zotero/storage/DC9GARPJ/Mehta and Rastegari - 2022 - MobileViT Light-weight, General-purpose, and Mobile-friendly Vision Transformer.pdf;/home/navid/Zotero/storage/6MMGZQXT/2110.html}
 }
 
 @misc{nazeriEdgeConnectGenerativeImage2019,
@@ -907,6 +1253,24 @@
   file = {/home/navid/Zotero/storage/PS6XTZ49/Peng et al. - 2021 - Generating Diverse Structure for Image Inpainting With Hierarchical VQ-VAE.pdf;/home/navid/Zotero/storage/W8E3AS5N/2103.html}
 }
 
+@misc{qinOpenVoiceVersatileInstant2024,
+  title = {{{OpenVoice}}: {{Versatile Instant Voice Cloning}}},
+  shorttitle = {{{OpenVoice}}},
+  author = {Qin, Zengyi and Zhao, Wenliang and Yu, Xumin and Sun, Xin},
+  year = {2024},
+  month = aug,
+  number = {arXiv:2312.01479},
+  eprint = {2312.01479},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2312.01479},
+  urldate = {2025-04-24},
+  abstract = {We introduce OpenVoice, a versatile voice cloning approach that requires only a short audio clip from the reference speaker to replicate their voice and generate speech in multiple languages. OpenVoice represents a significant advancement in addressing the following open challenges in the field: 1) Flexible Voice Style Control. OpenVoice enables granular control over voice styles, including emotion, accent, rhythm, pauses, and intonation, in addition to replicating the tone color of the reference speaker. The voice styles are not directly copied from and constrained by the style of the reference speaker. Previous approaches lacked the ability to flexibly manipulate voice styles after cloning. 2) Zero-Shot Cross-Lingual Voice Cloning. OpenVoice achieves zero-shot cross-lingual voice cloning for languages not included in the massive-speaker training set. Unlike previous approaches, which typically require extensive massive-speaker multi-lingual (MSML) dataset for all languages, OpenVoice can clone voices into a new language without any massive-speaker training data for that language. OpenVoice is also computationally efficient, costing tens of times less than commercially available APIs that offer even inferior performance. To foster further research in the field, we have made the source code and trained model publicly accessible. We also provide qualitative results in our demo website. OpenVoice has been used by more than 2M users worldwide as the voice engine of MyShell.ai},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing},
+  file = {/home/navid/Zotero/storage/ADTMPFXE/Qin et al. - 2024 - OpenVoice Versatile Instant Voice Cloning.pdf;/home/navid/Zotero/storage/BDLMJND8/2312.html}
+}
+
 @misc{quanDeepLearningbasedImage2024,
   title = {Deep {{Learning-based Image}} and {{Video Inpainting}}: {{A Survey}}},
   shorttitle = {Deep {{Learning-based Image}} and {{Video Inpainting}}},
@@ -968,6 +1332,42 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
   file = {/home/navid/Zotero/storage/ADKAJ34R/Ramesh et al. - 2021 - Zero-Shot Text-to-Image Generation.pdf;/home/navid/Zotero/storage/5LVKFA47/2102.html}
+}
+
+@misc{redmonYouOnlyLook2016,
+  title = {You {{Only Look Once}}: {{Unified}}, {{Real-Time Object Detection}}},
+  shorttitle = {You {{Only Look Once}}},
+  author = {Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
+  year = {2016},
+  month = may,
+  number = {arXiv:1506.02640},
+  eprint = {1506.02640},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1506.02640},
+  urldate = {2025-02-16},
+  abstract = {We present YOLO, a new approach to object detection. Prior work on object detection repurposes classifiers to perform detection. Instead, we frame object detection as a regression problem to spatially separated bounding boxes and associated class probabilities. A single neural network predicts bounding boxes and class probabilities directly from full images in one evaluation. Since the whole detection pipeline is a single network, it can be optimized end-to-end directly on detection performance. Our unified architecture is extremely fast. Our base YOLO model processes images in real-time at 45 frames per second. A smaller version of the network, Fast YOLO, processes an astounding 155 frames per second while still achieving double the mAP of other real-time detectors. Compared to state-of-the-art detection systems, YOLO makes more localization errors but is far less likely to predict false detections where nothing exists. Finally, YOLO learns very general representations of objects. It outperforms all other detection methods, including DPM and R-CNN, by a wide margin when generalizing from natural images to artwork on both the Picasso Dataset and the People-Art Dataset.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/W2WPWHC6/Redmon et al. - 2016 - You Only Look Once Unified, Real-Time Object Detection.pdf;/home/navid/Zotero/storage/64ES59NR/1506.html}
+}
+
+@misc{renFastSpeech2Fast2020,
+  title = {{{FastSpeech}} 2: {{Fast}} and {{High-Quality End-to-End Text-to-Speech}}},
+  shorttitle = {{{FastSpeech}} 2},
+  author = {Ren, Yi and Hu, Chenxu and Qin, Tao and Zhao, Sheng and Zhao, Zhou and Liu, Tie-Yan},
+  year = {2020},
+  month = jun,
+  number = {arXiv:2006.04558},
+  eprint = {2006.04558},
+  primaryclass = {eess},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2006.04558},
+  urldate = {2025-04-24},
+  abstract = {Advanced text-to-speech (TTS) models such as FastSpeech can synthesize speech significantly faster than previous autoregressive models with comparable quality. The training of FastSpeech model relies on an autoregressive teacher model for duration prediction (to provide more information as input) and knowledge distillation (to simplify the data distribution in output), which can ease the one-to-many mapping problem (i.e., multiple speech variations correspond to the same text) in TTS. However, FastSpeech has several disadvantages: 1) the teacher-student distillation pipeline is complicated, 2) the duration extracted from the teacher model is not accurate enough, and the target mel-spectrograms distilled from teacher model suffer from information loss due to data simplification, both of which limit the voice quality. In this paper, we propose FastSpeech 2, which addresses the issues in FastSpeech and better solves the one-to-many mapping problem in TTS by 1) directly training the model with ground-truth target instead of the simplified output from teacher, and 2) introducing more variation information of speech (e.g., pitch, energy and more accurate duration) as conditional inputs. Specifically, we extract duration, pitch and energy from speech waveform and directly take them as conditional inputs during training and use predicted values during inference. We further design FastSpeech 2s, which is the first attempt to directly generate speech waveform from text in parallel, enjoying the benefit of full end-to-end training and even faster inference than FastSpeech. Experimental results show that 1) FastSpeech 2 and 2s outperform FastSpeech in voice quality with much simplified training pipeline and reduced training time; 2) FastSpeech 2 and 2s can match the voice quality of autoregressive models while enjoying much faster inference speed.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing},
+  file = {/home/navid/Zotero/storage/58P7LB9S/Ren et al. - 2020 - FastSpeech 2 Fast and High-Quality End-to-End Text-to-Speech.pdf;/home/navid/Zotero/storage/EUX2H7FK/2006.html}
 }
 
 @inproceedings{rojasReviewImageInpainting2020,
@@ -1036,6 +1436,24 @@
   file = {/home/navid/Zotero/storage/9RX6668G/Russakovsky et al. - 2015 - ImageNet Large Scale Visual Recognition Challenge.pdf;/home/navid/Zotero/storage/425Z9ALH/1409.html}
 }
 
+@misc{senINRVContinuousRepresentation2023,
+  title = {{{INR-V}}: {{A Continuous Representation Space}} for {{Video-based Generative Tasks}}},
+  shorttitle = {{{INR-V}}},
+  author = {Sen, Bipasha and Agarwal, Aditya and Namboodiri, Vinay P. and Jawahar, C. V.},
+  year = {2023},
+  month = apr,
+  number = {arXiv:2210.16579},
+  eprint = {2210.16579},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2210.16579},
+  urldate = {2025-03-06},
+  abstract = {Generating videos is a complex task that is accomplished by generating a set of temporally coherent images frame-by-frame. This limits the expressivity of videos to only image-based operations on the individual video frames needing network designs to obtain temporally coherent trajectories in the underlying image space. We propose INR-V, a video representation network that learns a continuous space for video-based generative tasks. INR-V parameterizes videos using implicit neural representations (INRs), a multi-layered perceptron that predicts an RGB value for each input pixel location of the video. The INR is predicted using a meta-network which is a hypernetwork trained on neural representations of multiple video instances. Later, the meta-network can be sampled to generate diverse novel videos enabling many downstream video-based generative tasks. Interestingly, we find that conditional regularization and progressive weight initialization play a crucial role in obtaining INR-V. The representation space learned by INR-V is more expressive than an image space showcasing many interesting properties not possible with the existing works. For instance, INR-V can smoothly interpolate intermediate videos between known video instances (such as intermediate identities, expressions, and poses in face videos). It can also in-paint missing portions in videos to recover temporally coherent full videos. In this work, we evaluate the space learned by INR-V on diverse generative tasks such as video interpolation, novel video generation, video inversion, and video inpainting against the existing baselines. INR-V significantly outperforms the baselines on several of these demonstrated tasks, clearly showcasing the potential of the proposed representation space.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/NSJZH64M/Sen et al. - 2023 - INR-V A Continuous Representation Space for Video-based Generative Tasks.pdf;/home/navid/Zotero/storage/MW2PPZ9E/2210.html}
+}
+
 @misc{seyfiogluDiffuseChooseEnriching2024,
   title = {Diffuse to {{Choose}}: {{Enriching Image Conditioned Inpainting}} in {{Latent Diffusion Models}} for {{Virtual Try-All}}},
   shorttitle = {Diffuse to {{Choose}}},
@@ -1090,6 +1508,127 @@
   file = {/home/navid/Zotero/storage/S8K559BK/Shi et al. - 2015 - Convolutional LSTM Network A Machine Learning Approach for Precipitation Nowcasting.pdf;/home/navid/Zotero/storage/JNPKTRX8/1506.html}
 }
 
+@inproceedings{tokuyoshiImprovedGeometricSpecular2019,
+  title = {Improved Geometric Specular Antialiasing},
+  booktitle = {Proceedings of the {{ACM SIGGRAPH Symposium}} on {{Interactive 3D Graphics}} and {{Games}}},
+  author = {Tokuyoshi, Yusuke and Kaplanyan, Anton S.},
+  year = {2019},
+  month = may,
+  series = {{{I3D}} '19},
+  pages = {1--8},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3306131.3317026},
+  urldate = {2025-05-14},
+  abstract = {Shading filtering proposed by Kaplanyan et al. [2016] is a simple solution for specular aliasing. It filters a distribution of microfacet normals in the domain of microfacet slopes by estimating the filtering kernel using derivatives of a halfway vector between incident and outdoing directions. However, for real-time rendering, this approach can produce noticeable artifacts because of an estimation error of derivatives. For forward rendering, this estimation error is increased significantly at grazing angles and near edges. The present work improves the quality of the original technique, while decreasing the complexity of the code at the same time. To reduce the error, we introduce a more efficient kernel bandwidth that takes the angle of the halfvector into account. In addition, we optimize the calculation of an isotropic filter kernel used for deferred rendering by applying the proposed kernel bandwidth. As our implementation is simpler than the original method, it is easier to integrate in time-sensitive applications, such as game engines, while at the same time improving the filtering quality.},
+  isbn = {978-1-4503-6310-5},
+  file = {/home/navid/Zotero/storage/SQWVUVXY/Tokuyoshi and Kaplanyan - 2019 - Improved geometric specular antialiasing.pdf}
+}
+
+@misc{touvronAugmentingConvolutionalNetworks2021,
+  title = {Augmenting {{Convolutional}} Networks with Attention-Based Aggregation},
+  author = {Touvron, Hugo and Cord, Matthieu and {El-Nouby}, Alaaeldin and Bojanowski, Piotr and Joulin, Armand and Synnaeve, Gabriel and J{\'e}gou, Herv{\'e}},
+  year = {2021},
+  month = dec,
+  number = {arXiv:2112.13692},
+  eprint = {2112.13692},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2112.13692},
+  urldate = {2025-02-12},
+  abstract = {We show how to augment any convolutional network with an attention-based global map to achieve non-local reasoning. We replace the final average pooling by an attention-based aggregation layer akin to a single transformer block, that weights how the patches are involved in the classification decision. We plug this learned aggregation layer with a simplistic patch-based convolutional network parametrized by 2 parameters (width and depth). In contrast with a pyramidal design, this architecture family maintains the input patch resolution across all the layers. It yields surprisingly competitive trade-offs between accuracy and complexity, in particular in terms of memory consumption, as shown by our experiments on various computer vision tasks: object classification, image segmentation and detection.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/XFD6EYTT/Touvron et al. - 2021 - Augmenting Convolutional networks with attention-based aggregation.pdf;/home/navid/Zotero/storage/BGZBKR36/2112.html}
+}
+
+@misc{touvronCotraining$2^L$Submodels2022,
+  title = {Co-Training \$2{\textasciicircum}{{L}}\$ {{Submodels}} for {{Visual Recognition}}},
+  author = {Touvron, Hugo and Cord, Matthieu and Oquab, Maxime and Bojanowski, Piotr and Verbeek, Jakob and J{\'e}gou, Herv{\'e}},
+  year = {2022},
+  month = dec,
+  number = {arXiv:2212.04884},
+  eprint = {2212.04884},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2212.04884},
+  urldate = {2025-02-12},
+  abstract = {We introduce submodel co-training, a regularization method related to co-training, self-distillation and stochastic depth. Given a neural network to be trained, for each sample we implicitly instantiate two altered networks, ``submodels'', with stochastic depth: we activate only a subset of the layers. Each network serves as a soft teacher to the other, by providing a loss that complements the regular loss provided by the one-hot label. Our approach, dubbed cosub, uses a single set of weights, and does not involve a pre-trained external model or temporal averaging. Experimentally, we show that submodel co-training is effective to train backbones for recognition tasks such as image classification and semantic segmentation. Our approach is compatible with multiple architectures, including RegNet, ViT, PiT, XCiT, Swin and ConvNext. Our training strategy improves their results in comparable settings. For instance, a ViT-B pretrained with cosub on ImageNet-21k obtains 87.4\% top-1 acc. @448 on ImageNet-val.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/L4H2BWGZ/Touvron et al. - 2022 - Co-training $2^L$ Submodels for Visual Recognition.pdf;/home/navid/Zotero/storage/YSE4XLZP/2212.html}
+}
+
+@misc{touvronDeiTIIIRevenge2022,
+  title = {{{DeiT III}}: {{Revenge}} of the {{ViT}}},
+  shorttitle = {{{DeiT III}}},
+  author = {Touvron, Hugo and Cord, Matthieu and J{\'e}gou, Herv{\'e}},
+  year = {2022},
+  month = apr,
+  number = {arXiv:2204.07118},
+  eprint = {2204.07118},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2204.07118},
+  urldate = {2025-02-12},
+  abstract = {A Vision Transformer (ViT) is a simple neural architecture amenable to serve several computer vision tasks. It has limited built-in architectural priors, in contrast to more recent architectures that incorporate priors either about the input data or of specific tasks. Recent works show that ViTs benefit from self-supervised pre-training, in particular BerT-like pre-training like BeiT. In this paper, we revisit the supervised training of ViTs. Our procedure builds upon and simplifies a recipe introduced for training ResNet-50. It includes a new simple data-augmentation procedure with only 3 augmentations, closer to the practice in self-supervised learning. Our evaluations on Image classification (ImageNet-1k with and without pre-training on ImageNet-21k), transfer learning and semantic segmentation show that our procedure outperforms by a large margin previous fully supervised training recipes for ViT. It also reveals that the performance of our ViT trained with supervision is comparable to that of more recent architectures. Our results could serve as better baselines for recent self-supervised approaches demonstrated on ViT.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/IENDD3EY/Touvron et al. - 2022 - DeiT III Revenge of the ViT.pdf;/home/navid/Zotero/storage/EF4YV5XW/2204.html}
+}
+
+@misc{touvronGoingDeeperImage2021,
+  title = {Going Deeper with {{Image Transformers}}},
+  author = {Touvron, Hugo and Cord, Matthieu and Sablayrolles, Alexandre and Synnaeve, Gabriel and J{\'e}gou, Herv{\'e}},
+  year = {2021},
+  month = apr,
+  number = {arXiv:2103.17239},
+  eprint = {2103.17239},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2103.17239},
+  urldate = {2025-02-12},
+  abstract = {Transformers have been recently adapted for large scale image classification, achieving high scores shaking up the long supremacy of convolutional neural networks. However the optimization of image transformers has been little studied so far. In this work, we build and optimize deeper transformer networks for image classification. In particular, we investigate the interplay of architecture and optimization of such dedicated transformers. We make two transformers architecture changes that significantly improve the accuracy of deep transformers. This leads us to produce models whose performance does not saturate early with more depth, for instance we obtain 86.5\% top-1 accuracy on Imagenet when training with no external data, we thus attain the current SOTA with less FLOPs and parameters. Moreover, our best model establishes the new state of the art on Imagenet with Reassessed labels and Imagenet-V2 / match frequency, in the setting with no additional training data. We share our code and models.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/2GRLNW3I/Touvron et al. - 2021 - Going deeper with Image Transformers.pdf;/home/navid/Zotero/storage/U89HILGX/2103.html}
+}
+
+@misc{touvronResMLPFeedforwardNetworks2021,
+  title = {{{ResMLP}}: {{Feedforward}} Networks for Image Classification with Data-Efficient Training},
+  shorttitle = {{{ResMLP}}},
+  author = {Touvron, Hugo and Bojanowski, Piotr and Caron, Mathilde and Cord, Matthieu and {El-Nouby}, Alaaeldin and Grave, Edouard and Izacard, Gautier and Joulin, Armand and Synnaeve, Gabriel and Verbeek, Jakob and J{\'e}gou, Herv{\'e}},
+  year = {2021},
+  month = jun,
+  number = {arXiv:2105.03404},
+  eprint = {2105.03404},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2105.03404},
+  urldate = {2025-02-12},
+  abstract = {We present ResMLP, an architecture built entirely upon multi-layer perceptrons for image classification. It is a simple residual network that alternates (i) a linear layer in which image patches interact, independently and identically across channels, and (ii) a two-layer feed-forward network in which channels interact independently per patch. When trained with a modern training strategy using heavy data-augmentation and optionally distillation, it attains surprisingly good accuracy/complexity trade-offs on ImageNet. We also train ResMLP models in a self-supervised setup, to further remove priors from employing a labelled dataset. Finally, by adapting our model to machine translation we achieve surprisingly good results. We share pre-trained models and our code based on the Timm library.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/QVDG4D9X/Touvron et al. - 2021 - ResMLP Feedforward networks for image classification with data-efficient training.pdf;/home/navid/Zotero/storage/8JDPZCWP/2105.html}
+}
+
+@misc{touvronThreeThingsEveryone2022,
+  title = {Three Things Everyone Should Know about {{Vision Transformers}}},
+  author = {Touvron, Hugo and Cord, Matthieu and {El-Nouby}, Alaaeldin and Verbeek, Jakob and J{\'e}gou, Herv{\'e}},
+  year = {2022},
+  month = mar,
+  number = {arXiv:2203.09795},
+  eprint = {2203.09795},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2203.09795},
+  urldate = {2025-02-12},
+  abstract = {After their initial success in natural language processing, transformer architectures have rapidly gained traction in computer vision, providing state-of-the-art results for tasks such as image classification, detection, segmentation, and video analysis. We offer three insights based on simple and easy to implement variants of vision transformers. (1) The residual layers of vision transformers, which are usually processed sequentially, can to some extent be processed efficiently in parallel without noticeably affecting the accuracy. (2) Fine-tuning the weights of the attention layers is sufficient to adapt vision transformers to a higher resolution and to other classification tasks. This saves compute, reduces the peak memory consumption at fine-tuning time, and allows sharing the majority of weights across tasks. (3) Adding MLP-based patch pre-processing layers improves Bert-like self-supervised training based on patch masking. We evaluate the impact of these design choices using the ImageNet-1k dataset, and confirm our findings on the ImageNet-v2 test set. Transfer performance is measured across six smaller datasets.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/XUNH59FB/Touvron et al. - 2022 - Three things everyone should know about Vision Transformers.pdf;/home/navid/Zotero/storage/33NIT6ZW/2203.html}
+}
+
 @misc{touvronTrainingDataefficientImage2021,
   title = {Training Data-Efficient Image Transformers \& Distillation through Attention},
   author = {Touvron, Hugo and Cord, Matthieu and Douze, Matthijs and Massa, Francisco and Sablayrolles, Alexandre and J{\'e}gou, Herv{\'e}},
@@ -1104,7 +1643,42 @@
   abstract = {Recently, neural networks purely based on attention were shown to address image understanding tasks such as image classification. However, these visual transformers are pre-trained with hundreds of millions of images using an expensive infrastructure, thereby limiting their adoption. In this work, we produce a competitive convolution-free transformer by training on Imagenet only. We train them on a single computer in less than 3 days. Our reference vision transformer (86M parameters) achieves top-1 accuracy of 83.1\% (single-crop evaluation) on ImageNet with no external data. More importantly, we introduce a teacher-student strategy specific to transformers. It relies on a distillation token ensuring that the student learns from the teacher through attention. We show the interest of this token-based distillation, especially when using a convnet as a teacher. This leads us to report results competitive with convnets for both Imagenet (where we obtain up to 85.2\% accuracy) and when transferring to other tasks. We share our code and models.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
-  file = {/home/navid/Zotero/storage/BL5SM6TT/Touvron et al. - 2021 - Training data-efficient image transformers & distillation through attention.pdf;/home/navid/Zotero/storage/7JNTRFQS/2012.html}
+  file = {/home/navid/Zotero/storage/BL5SM6TT/Touvron et al. - 2021 - Training data-efficient image transformers & distillation through attention.pdf;/home/navid/Zotero/storage/7JNTRFQS/2012.html;/home/navid/Zotero/storage/R3PSICNG/2012.html}
+}
+
+@misc{valinLPCNetImprovingNeural2019,
+  title = {{{LPCNet}}: {{Improving Neural Speech Synthesis Through Linear Prediction}}},
+  shorttitle = {{{LPCNet}}},
+  author = {Valin, Jean-Marc and Skoglund, Jan},
+  year = {2019},
+  month = feb,
+  number = {arXiv:1810.11846},
+  eprint = {1810.11846},
+  primaryclass = {eess},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1810.11846},
+  urldate = {2025-04-24},
+  abstract = {Neural speech synthesis models have recently demonstrated the ability to synthesize high quality speech for text-to-speech and compression applications. These new models often require powerful GPUs to achieve real-time operation, so being able to reduce their complexity would open the way for many new applications. We propose LPCNet, a WaveRNN variant that combines linear prediction with recurrent neural networks to significantly improve the efficiency of speech synthesis. We demonstrate that LPCNet can achieve significantly higher quality than WaveRNN for the same network size and that high quality LPCNet speech synthesis is achievable with a complexity under 3 GFLOPS. This makes it easier to deploy neural synthesis applications on lower-power devices, such as embedded systems and mobile phones.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing},
+  file = {/home/navid/Zotero/storage/N2S7EJ5Y/Valin and Skoglund - 2019 - LPCNet Improving Neural Speech Synthesis Through Linear Prediction.pdf;/home/navid/Zotero/storage/DHAG2KBP/1810.html}
+}
+
+@misc{valinVeryLowComplexity2024,
+  title = {Very {{Low Complexity Speech Synthesis Using Framewise Autoregressive GAN}} ({{FARGAN}}) with {{Pitch Prediction}}},
+  author = {Valin, Jean-Marc and Mustafa, Ahmed and B{\"u}the, Jan},
+  year = {2024},
+  month = aug,
+  number = {arXiv:2405.21069},
+  eprint = {2405.21069},
+  primaryclass = {eess},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2405.21069},
+  urldate = {2025-04-24},
+  abstract = {Neural vocoders are now being used in a wide range of speech processing applications. In many of those applications, the vocoder can be the most complex component, so finding lower complexity algorithms can lead to significant practical benefits. In this work, we propose FARGAN, an autoregressive vocoder that takes advantage of long-term pitch prediction to synthesize high-quality speech in small subframes, without the need for teacher-forcing. Experimental results show that the proposed 600{\textasciitilde}MFLOPS FARGAN vocoder can achieve both higher quality and lower complexity than existing low-complexity vocoders. The quality even matches that of existing higher-complexity vocoders.},
+  archiveprefix = {arXiv},
+  keywords = {Electrical Engineering and Systems Science - Audio and Speech Processing},
+  file = {/home/navid/Zotero/storage/ZGDAIJNL/Valin et al. - 2024 - Very Low Complexity Speech Synthesis Using Framewise Autoregressive GAN (FARGAN) with Pitch Predicti.pdf;/home/navid/Zotero/storage/2Q7S8REG/2405.html}
 }
 
 @misc{vaswaniAttentionAllYou2023,
@@ -1139,6 +1713,41 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Electrical Engineering and Systems Science - Image and Video Processing},
   file = {/home/navid/Zotero/storage/UIPNWLJ4/Wan et al. - 2020 - Bringing Old Photos Back to Life.pdf;/home/navid/Zotero/storage/PHAQXDRR/2004.html}
+}
+
+@misc{wangTooLargeData2023,
+  title = {Too {{Large}}; {{Data Reduction}} for {{Vision-Language Pre-Training}}},
+  author = {Wang, Alex Jinpeng and Lin, Kevin Qinghong and Zhang, David Junhao and Lei, Stan Weixian and Shou, Mike Zheng},
+  year = {2023},
+  month = aug,
+  number = {arXiv:2305.20087},
+  eprint = {2305.20087},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2305.20087},
+  urldate = {2025-02-18},
+  abstract = {This paper examines the problems of severe image-text misalignment and high redundancy in the widely-used large-scale Vision-Language Pre-Training (VLP) datasets. To address these issues, we propose an efficient and straightforward Vision-Language learning algorithm called TL;DR, which aims to compress the existing large VLP data into a small, high-quality set. Our approach consists of two major steps. First, a codebook-based encoder-decoder captioner is developed to select representative samples. Second, a new caption is generated to complement the original captions for selected samples, mitigating the text-image misalignment problem while maintaining uniqueness. As the result, TL;DR enables us to reduce the large dataset into a small set of high-quality data, which can serve as an alternative pre-training dataset. This algorithm significantly speeds up the time-consuming pretraining process. Specifically, TL;DR can compress the mainstream VLP datasets at a high ratio, e.g., reduce well-cleaned CC3M dataset from 2.82M to 0.67M (\${\textbackslash}sim\$24{\textbackslash}\%) and noisy YFCC15M from 15M to 2.5M (\${\textbackslash}sim\$16.7{\textbackslash}\%). Extensive experiments with three popular VLP models over seven downstream tasks show that VLP model trained on the compressed dataset provided by TL;DR can perform similar or even better results compared with training on the full-scale dataset. The code will be made available at {\textbackslash}url\{https://github.com/showlab/datacentric.vlp\}.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/D9HXKUT8/Wang et al. - 2023 - Too Large\; Data Reduction for Vision-Language Pre-Training.pdf;/home/navid/Zotero/storage/PBJ8HICZ/2305.html}
+}
+
+@misc{wangYOLOv10RealTimeEndtoEnd2024,
+  title = {{{YOLOv10}}: {{Real-Time End-to-End Object Detection}}},
+  shorttitle = {{{YOLOv10}}},
+  author = {Wang, Ao and Chen, Hui and Liu, Lihao and Chen, Kai and Lin, Zijia and Han, Jungong and Ding, Guiguang},
+  year = {2024},
+  month = oct,
+  number = {arXiv:2405.14458},
+  eprint = {2405.14458},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2405.14458},
+  urldate = {2025-02-16},
+  abstract = {Over the past years, YOLOs have emerged as the predominant paradigm in the field of real-time object detection owing to their effective balance between computational cost and detection performance. Researchers have explored the architectural designs, optimization objectives, data augmentation strategies, and others for YOLOs, achieving notable progress. However, the reliance on the non-maximum suppression (NMS) for post-processing hampers the end-to-end deployment of YOLOs and adversely impacts the inference latency. Besides, the design of various components in YOLOs lacks the comprehensive and thorough inspection, resulting in noticeable computational redundancy and limiting the model's capability. It renders the suboptimal efficiency, along with considerable potential for performance improvements. In this work, we aim to further advance the performance-efficiency boundary of YOLOs from both the post-processing and model architecture. To this end, we first present the consistent dual assignments for NMS-free training of YOLOs, which brings competitive performance and low inference latency simultaneously. Moreover, we introduce the holistic efficiency-accuracy driven model design strategy for YOLOs. We comprehensively optimize various components of YOLOs from both efficiency and accuracy perspectives, which greatly reduces the computational overhead and enhances the capability. The outcome of our effort is a new generation of YOLO series for real-time end-to-end object detection, dubbed YOLOv10. Extensive experiments show that YOLOv10 achieves state-of-the-art performance and efficiency across various model scales. For example, our YOLOv10-S is 1.8\${\textbackslash}times\$ faster than RT-DETR-R18 under the similar AP on COCO, meanwhile enjoying 2.8\${\textbackslash}times\$ smaller number of parameters and FLOPs. Compared with YOLOv9-C, YOLOv10-B has 46{\textbackslash}\% less latency and 25{\textbackslash}\% fewer parameters for the same performance.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/7R496R2H/Wang et al. - 2024 - YOLOv10 Real-Time End-to-End Object Detection.pdf;/home/navid/Zotero/storage/V869F2MI/2405.html}
 }
 
 @misc{wanHighFidelityPluralisticImage2021,
@@ -1209,6 +1818,58 @@
   file = {/home/navid/Zotero/storage/35S6EX3H/Wu et al. - 2020 - Deep Generative Model for Image Inpainting with Local Binary Pattern Learning and Spatial Attention.pdf;/home/navid/Zotero/storage/EY6WYIL8/2009.html}
 }
 
+@misc{wuLanguageDrivenVideoInpainting2024,
+  title = {Towards {{Language-Driven Video Inpainting}} via {{Multimodal Large Language Models}}},
+  author = {Wu, Jianzong and Li, Xiangtai and Si, Chenyang and Zhou, Shangchen and Yang, Jingkang and Zhang, Jiangning and Li, Yining and Chen, Kai and Tong, Yunhai and Liu, Ziwei and Loy, Chen Change},
+  year = {2024},
+  month = jan,
+  number = {arXiv:2401.10226},
+  eprint = {2401.10226},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2401.10226},
+  urldate = {2025-03-07},
+  abstract = {We introduce a new task -- language-driven video inpainting, which uses natural language instructions to guide the inpainting process. This approach overcomes the limitations of traditional video inpainting methods that depend on manually labeled binary masks, a process often tedious and labor-intensive. We present the Remove Objects from Videos by Instructions (ROVI) dataset, containing 5,650 videos and 9,091 inpainting results, to support training and evaluation for this task. We also propose a novel diffusion-based language-driven video inpainting framework, the first end-to-end baseline for this task, integrating Multimodal Large Language Models to understand and execute complex language-based inpainting requests effectively. Our comprehensive results showcase the dataset's versatility and the model's effectiveness in various language-instructed inpainting scenarios. We will make datasets, code, and models publicly available.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/4K49J7UN/Wu et al. - 2024 - Towards Language-Driven Video Inpainting via Multimodal Large Language Models.pdf;/home/navid/Zotero/storage/L5GG2IQ2/2401.html}
+}
+
+@misc{wuLPFFPortraitDataset2023,
+  title = {{{LPFF}}: {{A Portrait Dataset}} for {{Face Generators Across Large Poses}}},
+  shorttitle = {{{LPFF}}},
+  author = {Wu, Yiqian and Zhang, Jing and Fu, Hongbo and Jin, Xiaogang},
+  year = {2023},
+  month = mar,
+  number = {arXiv:2303.14407},
+  eprint = {2303.14407},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2303.14407},
+  urldate = {2025-02-18},
+  abstract = {The creation of 2D realistic facial images and 3D face shapes using generative networks has been a hot topic in recent years. Existing face generators exhibit exceptional performance on faces in small to medium poses (with respect to frontal faces) but struggle to produce realistic results for large poses. The distorted rendering results on large poses in 3D-aware generators further show that the generated 3D face shapes are far from the distribution of 3D faces in reality. We find that the above issues are caused by the training dataset's pose imbalance. In this paper, we present LPFF, a large-pose Flickr face dataset comprised of 19,590 high-quality real large-pose portrait images. We utilize our dataset to train a 2D face generator that can process large-pose face images, as well as a 3D-aware generator that can generate realistic human face geometry. To better validate our pose-conditional 3D-aware generators, we develop a new FID measure to evaluate the 3D-level performance. Through this novel FID measure and other experiments, we show that LPFF can help 2D face generators extend their latent space and better manipulate the large-pose data, and help 3D-aware face generators achieve better view consistency and more realistic 3D reconstruction results.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/HY5IN3AG/Wu et al. - 2023 - LPFF A Portrait Dataset for Face Generators Across Large Poses.pdf;/home/navid/Zotero/storage/N7E3PR7I/2303.html}
+}
+
+@misc{xuDeepFlowGuidedVideo2019,
+  title = {Deep {{Flow-Guided Video Inpainting}}},
+  author = {Xu, Rui and Li, Xiaoxiao and Zhou, Bolei and Loy, Chen Change},
+  year = {2019},
+  month = may,
+  number = {arXiv:1905.02884},
+  eprint = {1905.02884},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1905.02884},
+  urldate = {2025-03-06},
+  abstract = {Video inpainting, which aims at filling in missing regions of a video, remains challenging due to the difficulty of preserving the precise spatial and temporal coherence of video contents. In this work we propose a novel flow-guided video inpainting approach. Rather than filling in the RGB pixels of each frame directly, we consider video inpainting as a pixel propagation problem. We first synthesize a spatially and temporally coherent optical flow field across video frames using a newly designed Deep Flow Completion network. Then the synthesized flow field is used to guide the propagation of pixels to fill up the missing regions in the video. Specifically, the Deep Flow Completion network follows a coarse-to-fine refinement to complete the flow fields, while their quality is further improved by hard flow example mining. Following the guide of the completed flow, the missing video regions can be filled up precisely. Our method is evaluated on DAVIS and YouTube-VOS datasets qualitatively and quantitatively, achieving the state-of-the-art performance in terms of inpainting quality and speed.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/653JT5QD/Xu et al. - 2019 - Deep Flow-Guided Video Inpainting.pdf;/home/navid/Zotero/storage/AZQHZ6TA/1905.html}
+}
+
 @article{yaghmaeeImprovingImageInpainting2020,
   title = {Improving Image Inpainting Quality by a New {{SVD-based}} Decomposition},
   author = {Yaghmaee, Farzin and Peyvandi, Kimia},
@@ -1244,6 +1905,41 @@
   file = {/home/navid/Zotero/storage/KSHPQ7CH/Yang et al. - 2025 - Hunyuan3D 1.0 A Unified Framework for Text-to-3D and Image-to-3D Generation.pdf;/home/navid/Zotero/storage/YDNWKQ4Y/2411.html}
 }
 
+@misc{yiDiffRetinexRethinkingLowlight2023,
+  title = {Diff-{{Retinex}}: {{Rethinking Low-light Image Enhancement}} with {{A Generative Diffusion Model}}},
+  shorttitle = {Diff-{{Retinex}}},
+  author = {Yi, Xunpeng and Xu, Han and Zhang, Hao and Tang, Linfeng and Ma, Jiayi},
+  year = {2023},
+  month = aug,
+  number = {arXiv:2308.13164},
+  eprint = {2308.13164},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2308.13164},
+  urldate = {2025-02-18},
+  abstract = {In this paper, we rethink the low-light image enhancement task and propose a physically explainable and generative diffusion model for low-light image enhancement, termed as Diff-Retinex. We aim to integrate the advantages of the physical model and the generative network. Furthermore, we hope to supplement and even deduce the information missing in the low-light image through the generative network. Therefore, Diff-Retinex formulates the low-light image enhancement problem into Retinex decomposition and conditional image generation. In the Retinex decomposition, we integrate the superiority of attention in Transformer and meticulously design a Retinex Transformer decomposition network (TDN) to decompose the image into illumination and reflectance maps. Then, we design multi-path generative diffusion networks to reconstruct the normal-light Retinex probability distribution and solve the various degradations in these components respectively, including dark illumination, noise, color deviation, loss of scene contents, etc. Owing to generative diffusion model, Diff-Retinex puts the restoration of low-light subtle detail into practice. Extensive experiments conducted on real-world low-light datasets qualitatively and quantitatively demonstrate the effectiveness, superiority, and generalization of the proposed method.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Electrical Engineering and Systems Science - Image and Video Processing},
+  file = {/home/navid/Zotero/storage/VM5METVK/Yi et al. - 2023 - Diff-Retinex Rethinking Low-light Image Enhancement with A Generative Diffusion Model.pdf;/home/navid/Zotero/storage/J2MD9EXZ/2308.html}
+}
+
+@misc{yuDeficiencyAwareMaskedTransformer2023,
+  title = {Deficiency-{{Aware Masked Transformer}} for {{Video Inpainting}}},
+  author = {Yu, Yongsheng and Fan, Heng and Zhang, Libo},
+  year = {2023},
+  month = jul,
+  number = {arXiv:2307.08629},
+  eprint = {2307.08629},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2307.08629},
+  urldate = {2025-03-06},
+  abstract = {Recent video inpainting methods have made remarkable progress by utilizing explicit guidance, such as optical flow, to propagate cross-frame pixels. However, there are cases where cross-frame recurrence of the masked video is not available, resulting in a deficiency. In such situation, instead of borrowing pixels from other frames, the focus of the model shifts towards addressing the inverse problem. In this paper, we introduce a dual-modality-compatible inpainting framework called Deficiency-aware Masked Transformer (DMT), which offers three key advantages. Firstly, we pretrain a image inpainting model DMT\_img serve as a prior for distilling the video model DMT\_vid, thereby benefiting the hallucination of deficiency cases. Secondly, the self-attention module selectively incorporates spatiotemporal tokens to accelerate inference and remove noise signals. Thirdly, a simple yet effective Receptive Field Contextualizer is integrated into DMT, further improving performance. Extensive experiments conducted on YouTube-VOS and DAVIS datasets demonstrate that DMT\_vid significantly outperforms previous solutions. The code and video demonstrations can be found at github.com/yeates/DMT.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/DXEPBS7P/Yu et al. - 2023 - Deficiency-Aware Masked Transformer for Video Inpainting.pdf;/home/navid/Zotero/storage/W9BVMS3W/2307.html}
+}
+
 @misc{yuDiverseImageInpainting2021,
   title = {Diverse {{Image Inpainting}} with {{Bidirectional}} and {{Autoregressive Transformers}}},
   author = {Yu, Yingchen and Zhan, Fangneng and Wu, Rongliang and Pan, Jianxiong and Cui, Kaiwen and Lu, Shijian and Ma, Feiying and Xie, Xuansong and Miao, Chunyan},
@@ -1276,6 +1972,129 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Computer Science - Machine Learning},
   file = {/home/navid/Zotero/storage/YVTF94XY/Yu et al. - 2019 - Free-Form Image Inpainting with Gated Convolution.pdf;/home/navid/Zotero/storage/WFQ4KNGI/1806.html}
+}
+
+@inproceedings{yuFrequencyAwareSpatiotemporalTransformers2021,
+  title = {Frequency-{{Aware Spatiotemporal Transformers}} for {{Video Inpainting Detection}}},
+  booktitle = {2021 {{IEEE}}/{{CVF International Conference}} on {{Computer Vision}} ({{ICCV}})},
+  author = {Yu, Bingyao and Li, Wanhua and Li, Xiu and Lu, Jiwen and Zhou, Jie},
+  year = {2021},
+  month = oct,
+  pages = {8168--8177},
+  issn = {2380-7504},
+  doi = {10.1109/ICCV48922.2021.00808},
+  urldate = {2025-03-07},
+  abstract = {In this paper, we propose a Frequency-Aware Spatiotemporal Transformer (FAST) for video inpainting detection, which aims to simultaneously mine the traces of video in-painting from spatial, temporal, and frequency domains. Unlike existing deep video inpainting detection methods that usually rely on hand-designed attention modules and memory mechanism, our proposed FAST have innate global self-attention mechanisms to capture the long-range relations. While existing video inpainting methods usually exploit the spatial and temporal connections in a video, our method employs a spatiotemporal transformer framework to detect the spatial connections between patches and temporal dependency between frames. As the inpainted videos usually lack high frequency details, our proposed FAST synchronously exploits the frequency domain information with a specifically designed decoder. Extensive experimental results demonstrate that our approach achieves very competitive performance and generalizes well.},
+  keywords = {Computer vision,Decoding,Frequency synchronization,Frequency-domain analysis,High frequency,Image and video manipulation detection and integrity methods,Spatiotemporal phenomena,Transformers,Video analysis and understanding},
+  file = {/home/navid/Zotero/storage/B5V4QXMD/Yu et al. - 2021 - Frequency-Aware Spatiotemporal Transformers for Video Inpainting Detection.pdf;/home/navid/Zotero/storage/PLLHBYII/9710661.html}
+}
+
+@misc{yuInpaintAnythingSegment2023,
+  title = {Inpaint {{Anything}}: {{Segment Anything Meets Image Inpainting}}},
+  shorttitle = {Inpaint {{Anything}}},
+  author = {Yu, Tao and Feng, Runseng and Feng, Ruoyu and Liu, Jinming and Jin, Xin and Zeng, Wenjun and Chen, Zhibo},
+  year = {2023},
+  month = apr,
+  number = {arXiv:2304.06790},
+  eprint = {2304.06790},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2304.06790},
+  urldate = {2025-03-07},
+  abstract = {Modern image inpainting systems, despite the significant progress, often struggle with mask selection and holes filling. Based on Segment-Anything Model (SAM), we make the first attempt to the mask-free image inpainting and propose a new paradigm of ``clicking and filling'', which is named as Inpaint Anything (IA). The core idea behind IA is to combine the strengths of different models in order to build a very powerful and user-friendly pipeline for solving inpainting-related problems. IA supports three main features: (i) Remove Anything: users could click on an object and IA will remove it and smooth the ``hole'' with the context; (ii) Fill Anything: after certain objects removal, users could provide text-based prompts to IA, and then it will fill the hole with the corresponding generative content via driving AIGC models like Stable Diffusion; (iii) Replace Anything: with IA, users have another option to retain the click-selected object and replace the remaining background with the newly generated scenes. We are also very willing to help everyone share and promote new projects based on our Inpaint Anything (IA). Our codes are available at https://github.com/geekyutao/Inpaint-Anything.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/4QZTSTNH/Yu et al. - 2023 - Inpaint Anything Segment Anything Meets Image Inpainting.pdf;/home/navid/Zotero/storage/7VLHP6Z4/2304.html}
+}
+
+@article{zhangExploitingOpticalFlow2024,
+  title = {Exploiting {{Optical Flow Guidance}} for {{Transformer-Based Video Inpainting}}},
+  author = {Zhang, Kaidong and Peng, Jialun and Fu, Jingjing and Liu, Dong},
+  year = {2024},
+  month = jul,
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume = {46},
+  number = {7},
+  eprint = {2301.10048},
+  primaryclass = {cs},
+  pages = {4977--4992},
+  issn = {0162-8828, 2160-9292, 1939-3539},
+  doi = {10.1109/TPAMI.2024.3361010},
+  urldate = {2025-03-06},
+  abstract = {Transformers have been widely used for video processing owing to the multi-head self attention (MHSA) mechanism. However, the MHSA mechanism encounters an intrinsic difficulty for video inpainting, since the features associated with the corrupted regions are degraded and incur inaccurate self attention. This problem, termed query degradation, may be mitigated by first completing optical flows and then using the flows to guide the self attention, which was verified in our previous work - flow-guided transformer (FGT). We further exploit the flow guidance and propose FGT++ to pursue more effective and efficient video inpainting. First, we design a lightweight flow completion network by using local aggregation and edge loss. Second, to address the query degradation, we propose a flow guidance feature integration module, which uses the motion discrepancy to enhance the features, together with a flow-guided feature propagation module that warps the features according to the flows. Third, we decouple the transformer along the temporal and spatial dimensions, where flows are used to select the tokens through a temporally deformable MHSA mechanism, and global tokens are combined with the inner-window local tokens through a dual perspective MHSA mechanism. FGT++ is experimentally evaluated to be outperforming the existing video inpainting networks qualitatively and quantitatively.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/T47AQPFK/Zhang et al. - 2024 - Exploiting Optical Flow Guidance for Transformer-Based Video Inpainting.pdf;/home/navid/Zotero/storage/5AU4F2JH/2301.html}
+}
+
+@misc{zhangFasterSegmentAnything2023,
+  title = {Faster {{Segment Anything}}: {{Towards Lightweight SAM}} for {{Mobile Applications}}},
+  shorttitle = {Faster {{Segment Anything}}},
+  author = {Zhang, Chaoning and Han, Dongshen and Qiao, Yu and Kim, Jung Uk and Bae, Sung-Ho and Lee, Seungkyu and Hong, Choong Seon},
+  year = {2023},
+  month = jul,
+  number = {arXiv:2306.14289},
+  eprint = {2306.14289},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2306.14289},
+  urldate = {2025-03-07},
+  abstract = {Segment Anything Model (SAM) has attracted significant attention due to its impressive zero-shot transfer performance and high versatility for numerous vision applications (like image editing with fine-grained control). Many of such applications need to be run on resource-constraint edge devices, like mobile phones. In this work, we aim to make SAM mobile-friendly by replacing the heavyweight image encoder with a lightweight one. A naive way to train such a new SAM as in the original SAM paper leads to unsatisfactory performance, especially when limited training sources are available. We find that this is mainly caused by the coupled optimization of the image encoder and mask decoder, motivated by which we propose decoupled distillation. Concretely, we distill the knowledge from the heavy image encoder (ViT-H in the original SAM) to a lightweight image encoder, which can be automatically compatible with the mask decoder in the original SAM. The training can be completed on a single GPU within less than one day, and the resulting lightweight SAM is termed MobileSAM which is more than 60 times smaller yet performs on par with the original SAM. For inference speed, With a single GPU, MobileSAM runs around 10ms per image: 8ms on the image encoder and 4ms on the mask decoder. With superior performance, our MobileSAM is around 5 times faster than the concurrent FastSAM and 7 times smaller, making it more suitable for mobile applications. Moreover, we show that MobileSAM can run relatively smoothly on CPU. The code for our project is provided at {\textbackslash}href\{https://github.com/ChaoningZhang/MobileSAM\}\{{\textbackslash}textcolor\{red\}\{MobileSAM\}\}), with a demo showing that MobileSAM can run relatively smoothly on CPU.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/4PAW5Y8N/Zhang et al. - 2023 - Faster Segment Anything Towards Lightweight SAM for Mobile Applications.pdf;/home/navid/Zotero/storage/67N7S87J/2306.html}
+}
+
+@misc{zhangFlowGuidedTransformerVideo2022,
+  title = {Flow-{{Guided Transformer}} for {{Video Inpainting}}},
+  author = {Zhang, Kaidong and Fu, Jingjing and Liu, Dong},
+  year = {2022},
+  month = aug,
+  number = {arXiv:2208.06768},
+  eprint = {2208.06768},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2208.06768},
+  urldate = {2025-03-06},
+  abstract = {We propose a flow-guided transformer, which innovatively leverage the motion discrepancy exposed by optical flows to instruct the attention retrieval in transformer for high fidelity video inpainting. More specially, we design a novel flow completion network to complete the corrupted flows by exploiting the relevant flow features in a local temporal window. With the completed flows, we propagate the content across video frames, and adopt the flow-guided transformer to synthesize the rest corrupted regions. We decouple transformers along temporal and spatial dimension, so that we can easily integrate the locally relevant completed flows to instruct spatial attention only. Furthermore, we design a flow-reweight module to precisely control the impact of completed flows on each spatial transformer. For the sake of efficiency, we introduce window partition strategy to both spatial and temporal transformers. Especially in spatial transformer, we design a dual perspective spatial MHSA, which integrates the global tokens to the window-based attention. Extensive experiments demonstrate the effectiveness of the proposed method qualitatively and quantitatively. Codes are available at https://github.com/hitachinsk/FGT.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/LW8PKKSB/Zhang et al. - 2022 - Flow-Guided Transformer for Video Inpainting.pdf;/home/navid/Zotero/storage/77HNV2XC/2208.html}
+}
+
+@misc{zhangInternalLearningApproach2019,
+  title = {An {{Internal Learning Approach}} to {{Video Inpainting}}},
+  author = {Zhang, Haotian and Mai, Long and Xu, Ning and Wang, Zhaowen and Collomosse, John and Jin, Hailin},
+  year = {2019},
+  month = sep,
+  number = {arXiv:1909.07957},
+  eprint = {1909.07957},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1909.07957},
+  urldate = {2025-03-06},
+  abstract = {We propose a novel video inpainting algorithm that simultaneously hallucinates missing appearance and motion (optical flow) information, building upon the recent 'Deep Image Prior' (DIP) that exploits convolutional network architectures to enforce plausible texture in static images. In extending DIP to video we make two important contributions. First, we show that coherent video inpainting is possible without a priori training. We take a generative approach to inpainting based on internal (within-video) learning without reliance upon an external corpus of visual data to train a one-size-fits-all model for the large space of general videos. Second, we show that such a framework can jointly generate both appearance and flow, whilst exploiting these complementary modalities to ensure mutual consistency. We show that leveraging appearance statistics specific to each video achieves visually plausible results whilst handling the challenging problem of long-term consistency.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/R65XN8TN/Zhang et al. - 2019 - An Internal Learning Approach to Video Inpainting.pdf;/home/navid/Zotero/storage/9R3BDCZ9/1909.html}
+}
+
+@misc{zhangMobileSAMv2FasterSegment2023,
+  title = {{{MobileSAMv2}}: {{Faster Segment Anything}} to {{Everything}}},
+  shorttitle = {{{MobileSAMv2}}},
+  author = {Zhang, Chaoning and Han, Dongshen and Zheng, Sheng and Choi, Jinwoo and Kim, Tae-Ho and Hong, Choong Seon},
+  year = {2023},
+  month = dec,
+  number = {arXiv:2312.09579},
+  eprint = {2312.09579},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2312.09579},
+  urldate = {2025-03-07},
+  abstract = {Segment anything model (SAM) addresses two practical yet challenging segmentation tasks: {\textbackslash}textbf\{segment anything (SegAny)\}, which utilizes a certain point to predict the mask for a single object of interest, and {\textbackslash}textbf\{segment everything (SegEvery)\}, which predicts the masks for all objects on the image. What makes SegAny slow for SAM is its heavyweight image encoder, which has been addressed by MobileSAM via decoupled knowledge distillation. The efficiency bottleneck of SegEvery with SAM, however, lies in its mask decoder because it needs to first generate numerous masks with redundant grid-search prompts and then perform filtering to obtain the final valid masks. We propose to improve its efficiency by directly generating the final masks with only valid prompts, which can be obtained through object discovery. Our proposed approach not only helps reduce the total time on the mask decoder by at least 16 times but also achieves superior performance. Specifically, our approach yields an average performance boost of 3.6{\textbackslash}\% (42.5{\textbackslash}\% {\textbackslash}textit\{v.s.\} 38.9{\textbackslash}\%) for zero-shot object proposal on the LVIS dataset with the mask AR@\$K\$ metric. Qualitative results show that our approach generates fine-grained masks while avoiding over-segmenting things. This project targeting faster SegEvery than the original SAM is termed MobileSAMv2 to differentiate from MobileSAM which targets faster SegAny. Moreover, we demonstrate that our new prompt sampling is also compatible with the distilled image encoders in MobileSAM, contributing to a unified framework for efficient SegAny and SegEvery. The code is available at the same link as MobileSAM Project {\textbackslash}href\{https://github.com/ChaoningZhang/MobileSAM\}\{{\textbackslash}textcolor\{red\}\{https://github.com/ChaoningZhang/MobileSAM\}\}. {\textbackslash}end\{abstract\}},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/TKNDHJSF/Zhang et al. - 2023 - MobileSAMv2 Faster Segment Anything to Everything.pdf;/home/navid/Zotero/storage/HX3R2UDQ/2312.html}
 }
 
 @misc{zhaoHunyuan3D20Scaling2025,
@@ -1346,6 +2165,24 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition},
   file = {/home/navid/Zotero/storage/ZG58PSHF/Zhou et al. - 2016 - Places An Image Database for Deep Scene Understanding.pdf;/home/navid/Zotero/storage/8ZJ8QSCT/1610.html}
+}
+
+@misc{zhouProPainterImprovingPropagation2023,
+  title = {{{ProPainter}}: {{Improving Propagation}} and {{Transformer}} for {{Video Inpainting}}},
+  shorttitle = {{{ProPainter}}},
+  author = {Zhou, Shangchen and Li, Chongyi and Chan, Kelvin C. K. and Loy, Chen Change},
+  year = {2023},
+  month = sep,
+  number = {arXiv:2309.03897},
+  eprint = {2309.03897},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2309.03897},
+  urldate = {2025-03-06},
+  abstract = {Flow-based propagation and spatiotemporal Transformer are two mainstream mechanisms in video inpainting (VI). Despite the effectiveness of these components, they still suffer from some limitations that affect their performance. Previous propagation-based approaches are performed separately either in the image or feature domain. Global image propagation isolated from learning may cause spatial misalignment due to inaccurate optical flow. Moreover, memory or computational constraints limit the temporal range of feature propagation and video Transformer, preventing exploration of correspondence information from distant frames. To address these issues, we propose an improved framework, called ProPainter, which involves enhanced ProPagation and an efficient Transformer. Specifically, we introduce dual-domain propagation that combines the advantages of image and feature warping, exploiting global correspondences reliably. We also propose a mask-guided sparse video Transformer, which achieves high efficiency by discarding unnecessary and redundant tokens. With these components, ProPainter outperforms prior arts by a large margin of 1.46 dB in PSNR while maintaining appealing efficiency.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/home/navid/Zotero/storage/LUWF7XED/Zhou et al. - 2023 - ProPainter Improving Propagation and Transformer for Video Inpainting.pdf;/home/navid/Zotero/storage/4YBMT4XY/2309.html;/home/navid/Zotero/storage/A4PYILU2/2309.html;/home/navid/Zotero/storage/QRZD375W/2309.html}
 }
 
 @misc{zhuCelebVHQLargeScaleVideo2022,
